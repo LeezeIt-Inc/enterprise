@@ -6,21 +6,31 @@
 //
 import Foundation
 import UIKit
+
 class PhoneNumberViewController:UIViewController{
     
-    @IBOutlet weak var phoneNumberText: UITextField!
-    @IBOutlet weak var leezeItI: UIImageView!
-    @IBOutlet weak var nextBut: UIButton!
+    @IBOutlet weak var phoneNumberText: UITextField! {
+        didSet{
+            phoneNumberText.layer.cornerRadius = 12
+            phoneNumberText.layer.borderWidth = 0.3
+            phoneNumberText.keyboardType = UIKeyboardType.phonePad
+            phoneNumberText.delegate = self
+        }
+    }
+    @IBOutlet weak var leezeItlogo: UIImageView! {
+        didSet{
+            leezeItlogo.frame = CGRect(x: 48, y: 180, width: 338, height: 155)
+        }
+    }
+    @IBOutlet weak var nextButton: UIButton! {
+        didSet{
+            nextButton.layer.cornerRadius = 30
+            nextButton.frame = CGRect(x: 40, y: 590, width: 345, height: 67)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nextBut.layer.cornerRadius = 30
-        nextBut.frame = CGRect(x: 40, y: 590, width: 345, height: 67)
-        phoneNumberText.layer.cornerRadius = 12
-        phoneNumberText.layer.borderWidth = 0.3
-        leezeItI.frame = CGRect(x: 48, y: 180, width: 338, height: 155)
-        phoneNumberText.keyboardType = UIKeyboardType.phonePad
-        phoneNumberText.delegate = self
 }
   
     @IBAction func nextbutt(_ sender: Any) {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController storyboardIdentifier="PhoneNumberViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="PhoneNumberViewController" customModule="LeezeIt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="+1" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CH0-UG-dCM">
-                                <rect key="frame" x="40" y="318" width="240" height="34"/>
+                                <rect key="frame" x="40" y="362" width="334" height="34"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
@@ -28,7 +28,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAn-Wp-N5A">
-                                <rect key="frame" x="20" y="399" width="280" height="60"/>
+                                <rect key="frame" x="20" y="443" width="374" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="ZGw-eZ-Ppe">
                                         <variation key="heightClass=compact-widthClass=regular" constant="70"/>
@@ -44,13 +44,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Your Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wom-9u-QE2">
-                                <rect key="frame" x="40" y="260" width="240" height="24"/>
+                                <rect key="frame" x="40" y="304" width="334" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <color key="textColor" red="0.43137254899999999" green="0.43000000719999998" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LeezeIt" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VTj-KW-qDg">
-                                <rect key="frame" x="20" y="50" width="280" height="190"/>
+                                <rect key="frame" x="20" y="94" width="374" height="190"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="190" id="dro-wg-gos">
                                         <variation key="heightClass=compact-widthClass=regular" constant="340"/>
@@ -84,8 +84,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="leezeItI" destination="VTj-KW-qDg" id="Mha-ps-b1K"/>
-                        <outlet property="nextBut" destination="tAn-Wp-N5A" id="he3-Ym-DJb"/>
+                        <outlet property="leezeItlogo" destination="VTj-KW-qDg" id="Mha-ps-b1K"/>
+                        <outlet property="nextButton" destination="tAn-Wp-N5A" id="he3-Ym-DJb"/>
                         <outlet property="phoneNumberText" destination="CH0-UG-dCM" id="Izw-w3-mvN"/>
                     </connections>
                 </viewController>

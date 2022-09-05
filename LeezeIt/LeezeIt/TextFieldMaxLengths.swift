@@ -10,6 +10,7 @@ import UIKit
 
 private var maxLengths = [UITextField:Int]()
 extension UITextField {
+    
     @IBInspectable var maxLength: Int {
         get{
             guard let length = maxLengths[self] else {
