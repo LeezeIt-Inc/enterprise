@@ -40,7 +40,7 @@
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="nextbutt:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ZJu-5Y-RLD"/>
+                                    <action selector="nextButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="7Hf-Yf-euQ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Your Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wom-9u-QE2">
@@ -85,7 +85,7 @@
                     </view>
                     <connections>
                         <outlet property="leezeItlogo" destination="VTj-KW-qDg" id="Mha-ps-b1K"/>
-                        <outlet property="nextButton" destination="tAn-Wp-N5A" id="he3-Ym-DJb"/>
+                        <outlet property="nextButton" destination="tAn-Wp-N5A" id="mlm-aa-G7A"/>
                         <outlet property="phoneNumberText" destination="CH0-UG-dCM" id="Izw-w3-mvN"/>
                     </connections>
                 </viewController>

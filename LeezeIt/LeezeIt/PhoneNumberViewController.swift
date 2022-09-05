@@ -10,7 +10,8 @@ import UIKit
 class PhoneNumberViewController:UIViewController{
     
     @IBOutlet weak var phoneNumberText: UITextField! {
-        didSet{
+        didSet {
+            
             phoneNumberText.layer.cornerRadius = 12
             phoneNumberText.layer.borderWidth = 0.3
             phoneNumberText.keyboardType = UIKeyboardType.phonePad
@@ -18,12 +19,14 @@ class PhoneNumberViewController:UIViewController{
         }
     }
     @IBOutlet weak var leezeItlogo: UIImageView! {
-        didSet{
+        didSet {
+            
             leezeItlogo.frame = CGRect(x: 48, y: 180, width: 338, height: 155)
         }
     }
     @IBOutlet weak var nextButton: UIButton! {
-        didSet{
+        didSet {
+            
             nextButton.layer.cornerRadius = 30
             nextButton.frame = CGRect(x: 40, y: 590, width: 345, height: 67)
         }
@@ -33,7 +36,7 @@ class PhoneNumberViewController:UIViewController{
         super.viewDidLoad()
 }
   
-    @IBAction func nextbutt(_ sender: Any) {
+    @IBAction func nextButton(_ sender: Any) {
     }
 
 }
