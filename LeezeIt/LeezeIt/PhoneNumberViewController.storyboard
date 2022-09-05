@@ -49,7 +49,7 @@
                                 <color key="textColor" red="0.43137254899999999" green="0.43000000719999998" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LeezeIt" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VTj-KW-qDg">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VTj-KW-qDg">
                                 <rect key="frame" x="20" y="94" width="374" height="190"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="190" id="dro-wg-gos">
@@ -95,7 +95,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LeezeIt" width="1681" height="545"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

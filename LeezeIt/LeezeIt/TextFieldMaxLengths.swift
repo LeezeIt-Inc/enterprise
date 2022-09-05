@@ -12,7 +12,7 @@ private var maxLengths = [UITextField:Int]()
 extension UITextField {
     
     @IBInspectable var maxLength: Int {
-        get{
+        get {
             guard let length = maxLengths[self] else {
                 return Int.max
             }
@@ -23,15 +23,13 @@ extension UITextField {
             addTarget(self, action: #selector(limitLength), for: UIControl.Event.editingChanged)
         }
     }
-    @objc func limitLength(textField:UITextField){
+    
+    @objc func limitLength(textField:UITextField) {
         guard let prospectiveText = textField.text,
-              prospectiveText.count > maxLength
-        else {
-            return
-        }
+              prospectiveText.count > maxLength else {return}
         let selection = selectedTextRange
         let maxCharIndex = prospectiveText.index(prospectiveText.startIndex,offsetBy: maxLength)
-        text = prospectiveText.substring(to: maxCharIndex)
+        text = String(prospectiveText[maxCharIndex])
         selectedTextRange = selection
     }
 }
