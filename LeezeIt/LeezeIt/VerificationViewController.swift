@@ -8,14 +8,14 @@
 import UIKit
 
 class VerificationViewController: UIViewController,UITextFieldDelegate {
-
+    
     @IBOutlet weak var textFieldOne: UITextField!
     @IBOutlet weak var textFieldTwo: UITextField!
     @IBOutlet weak var textFieldThree: UITextField!
     @IBOutlet weak var textFieldFour: UITextField!
-    @IBOutlet weak var veriefyButton: UIButton! {
+    @IBOutlet weak var verifyButtonOutlet: UIButton! {
         didSet {
-            veriefyButton.layer.cornerRadius = 12
+            verifyButtonOutlet.layer.cornerRadius = 12
         }
     }
     
@@ -27,12 +27,12 @@ class VerificationViewController: UIViewController,UITextFieldDelegate {
         super.viewDidLoad()
         setup()
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         textFieldOne.becomeFirstResponder()
     }
-
+    
     @objc func textDidChange(textField:UITextField) {
         let text = textField.text
         if text?.utf16.count == 1 {
@@ -53,8 +53,9 @@ class VerificationViewController: UIViewController,UITextFieldDelegate {
             default :
                 break
             }
-        } else {}
+        }
     }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
@@ -65,4 +66,4 @@ class VerificationViewController: UIViewController,UITextFieldDelegate {
         textFieldThree.addTarget(self, action: #selector(textDidChange(textField:)), for: UIControl.Event.editingChanged)
         textFieldFour.addTarget(self, action: #selector(textDidChange(textField:)), for: UIControl.Event.editingChanged)
     }
-       }
+}
