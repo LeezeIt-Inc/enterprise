@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     }()
     
     var leezeitImage: UIImageView = {
-        let leezeitImage =  UIImageView(image: .init(named: "L"))
+        let leezeitImage =  UIImageView(image: .init(named: "LeezeitImage"))
         leezeitImage.contentMode                               = .scaleToFill
         leezeitImage.clipsToBounds                             = true
         return leezeitImage
