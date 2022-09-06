@@ -43,26 +43,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       addViewsInView()
+        addViewsInView()
         
     } 
-    
+
     @objc func logIn(_ sender: UIButton) {
         print("LogIn Button Tapped")
         
     }
     
-    @objc  func signUP(_ sender: UIButton) {
+    @objc func signUP(_ sender: UIButton) {
         print("signUp Button Tapped")
-        
     }
 }
-
 
 extension ViewController {
  
     func parentStackViewConstraint() {
-        
         parentStackView.translatesAutoresizingMaskIntoConstraints                                                           = false
         parentStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 170).isActive           = true
         parentStackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 0).isActive     = true
