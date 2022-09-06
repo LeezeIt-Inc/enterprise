@@ -21,7 +21,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< Updated upstream
             <point key="canvasLocation" x="-41" y="52"/>
+=======
+            <point key="canvasLocation" x="35" y="82"/>
+>>>>>>> Stashed changes
         </scene>
     </scenes>
     <resources>
