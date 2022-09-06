@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SurveyButton: UIButton {
+class CreateButton: UIButton {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -21,8 +21,8 @@ class SurveyButton: UIButton {
     
     func setupButton() {
         setTitleColor(.white, for: .normal)
-        backgroundColor            = .systemMint
-        layer.cornerRadius         = 10
+        backgroundColor  = .systemMint
+        layer.cornerRadius  = 10
         titleLabel?.font = UIFont.boldSystemFont(ofSize: 24)
 
     }

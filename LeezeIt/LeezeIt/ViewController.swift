@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         return stackView
     }()
     
-    let logoImageStackView:  UIStackView = {
+    let leezeitImageStackView:  UIStackView = {
         let stackView = UIStackView()
         return stackView
         
@@ -33,25 +33,21 @@ class ViewController: UIViewController {
         return stackView
     }()
     
-    var logoImage: UIImageView = {
-        let lztImage =  UIImageView(image: .init(named: "L"))
-        lztImage.contentMode                               = .scaleToFill
-        lztImage.clipsToBounds                             = true
-        return lztImage
+    var leezeitImage: UIImageView = {
+        let leezeitImage =  UIImageView(image: .init(named: "L"))
+        leezeitImage.contentMode                               = .scaleToFill
+        leezeitImage.clipsToBounds                             = true
+        return leezeitImage
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.addSubview(parentStackView)
-        parentStackViewConst()
+       addViewsInView()
         
     } 
     
-
-
-    
-    @objc  func logIn(_ sender: UIButton) {
+    @objc func logIn(_ sender: UIButton) {
         print("LogIn Button Tapped")
         
     }
@@ -65,7 +61,7 @@ class ViewController: UIViewController {
 
 extension ViewController {
  
-    func parentStackViewConst() {
+    func parentStackViewConstraint() {
         
         parentStackView.translatesAutoresizingMaskIntoConstraints                                                           = false
         parentStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 170).isActive           = true
@@ -77,17 +73,17 @@ extension ViewController {
         
     }
     
-    func imageStackViewConst() {
-        logoImageStackView.translatesAutoresizingMaskIntoConstraints                                               = false
-        logoImageStackView.centerXAnchor.constraint(equalTo: parentStackView.centerXAnchor).isActive               = true
-        logoImageStackView.topAnchor.constraint(equalTo: parentStackView.bottomAnchor, constant: -10).isActive     = true
-        logoImageStackView.addArrangedSubview(logoImage)
+    func imageStackViewConstraint() {
+        leezeitImageStackView.translatesAutoresizingMaskIntoConstraints                                               = false
+        leezeitImageStackView.centerXAnchor.constraint(equalTo: parentStackView.centerXAnchor).isActive               = true
+        leezeitImageStackView.topAnchor.constraint(equalTo: parentStackView.bottomAnchor, constant: -10).isActive     = true
+        leezeitImageStackView.addArrangedSubview(leezeitImage)
         
-        logoImage.translatesAutoresizingMaskIntoConstraints                                               = false
-        logoImage.heightAnchor.constraint(equalTo: parentStackView.widthAnchor, multiplier: 0.4).isActive = true
+        leezeitImage.translatesAutoresizingMaskIntoConstraints                                               = false
+        leezeitImage.heightAnchor.constraint(equalTo: parentStackView.widthAnchor, multiplier: 0.4).isActive = true
     }
     
-    func buttonStackViewConst() {
+    func buttonStackViewConstraint() {
         buttonStackView.translatesAutoresizingMaskIntoConstraints                                                          = false
         buttonStackView.leadingAnchor.constraint(equalTo: parentStackView.leadingAnchor, constant: 35).isActive            = true
         buttonStackView.trailingAnchor.constraint(equalTo: parentStackView.trailingAnchor, constant: -35).isActive         = true
@@ -97,10 +93,15 @@ extension ViewController {
     }
    
     func addViewsInParentStackView() {
-        parentStackView.addArrangedSubview(logoImageStackView)
-        imageStackViewConst()
+        parentStackView.addArrangedSubview(leezeitImageStackView)
+        imageStackViewConstraint()
         parentStackView.addArrangedSubview(buttonStackView)
-        buttonStackViewConst()
+        buttonStackViewConstraint()
+    }
+    
+    func addViewsInView() {
+        view.addSubview(parentStackView)
+        parentStackViewConstraint()
     }
     
     func addButtonsToStackView() {
@@ -108,7 +109,7 @@ extension ViewController {
         
         for i in 1...numOfButtons {
             
-            let button = SurveyButton()
+            let button = CreateButton()
             
             if i == 1 {
                 button.setTitle("Log In", for: .normal)
@@ -122,16 +123,3 @@ extension ViewController {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
