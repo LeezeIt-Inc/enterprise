@@ -9,57 +9,60 @@ import UIKit
 
 class VerificationViewController: UIViewController,UITextFieldDelegate {
 
+    @IBOutlet weak var textFieldOne: UITextField!
+    @IBOutlet weak var textFieldTwo: UITextField!
+    @IBOutlet weak var textFieldThree: UITextField!
+    @IBOutlet weak var textFieldFour: UITextField!
+    @IBOutlet weak var veriefyButton: UIButton! {
+        didSet {
+            veriefyButton.layer.cornerRadius = 12
+        }
+    }
     
-    @IBOutlet weak var textOne: UITextField!
-    @IBOutlet weak var textTwo: UITextField!
-    @IBOutlet weak var textThree: UITextField!
-    @IBOutlet weak var textFour: UITextField!
-    @IBOutlet weak var vButt: UIButton!
-    
-    @IBAction func veriFyB(_ sender: Any) {
+    @IBAction func verifyButton(_ sender: Any) {
         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        vButt.layer.cornerRadius = 12
-        textOne.addTarget(self, action: #selector(textDidChange(textField:)), for: UIControl.Event.editingChanged)
-        textTwo.addTarget(self, action: #selector(textDidChange(textField:)), for: UIControl.Event.editingChanged)
-        textThree.addTarget(self, action: #selector(textDidChange(textField:)), for: UIControl.Event.editingChanged)
-        textFour.addTarget(self, action: #selector(textDidChange(textField:)), for: UIControl.Event.editingChanged)
+        setup()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        textOne.becomeFirstResponder()
+        textFieldOne.becomeFirstResponder()
     }
 
-    @objc func textDidChange(textField:UITextField){
+    @objc func textDidChange(textField:UITextField) {
         let text = textField.text
         if text?.utf16.count == 1 {
             
             switch textField {
-            case textOne :
-                textTwo.becomeFirstResponder()
+            case textFieldOne :
+                textFieldTwo.becomeFirstResponder()
                 break
-            case textTwo :
-                textThree.becomeFirstResponder()
+            case textFieldTwo :
+                textFieldThree.becomeFirstResponder()
                 break
-            case textThree :
-                textFour.becomeFirstResponder()
+            case textFieldThree :
+                textFieldFour.becomeFirstResponder()
                 break
-            case textFour :
-                textFour.resignFirstResponder()
+            case textFieldFour :
+                textFieldFour.resignFirstResponder()
                 break
             default :
                 break
             }
-        }else {
-        }
+        } else {}
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
-       }
     
-
+    func setup() {
+        textFieldOne.addTarget(self, action: #selector(textDidChange(textField:)), for: UIControl.Event.editingChanged)
+        textFieldTwo.addTarget(self, action: #selector(textDidChange(textField:)), for: UIControl.Event.editingChanged)
+        textFieldThree.addTarget(self, action: #selector(textDidChange(textField:)), for: UIControl.Event.editingChanged)
+        textFieldFour.addTarget(self, action: #selector(textDidChange(textField:)), for: UIControl.Event.editingChanged)
+    }
+       }

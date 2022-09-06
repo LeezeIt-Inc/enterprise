@@ -9,21 +9,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
-    
-    @IBAction func nextS(_ sender: Any) {
-       // let vc = storyboard?.instantiateViewController(withIdentifier: "VerificationViewController") as VerificationViewController
+    @IBAction func nextScreen(_ sender: Any) {
         let storyBoard = UIStoryboard(name: "VerificationViewController", bundle: nil)
         let vc = storyBoard.instantiateViewController(withIdentifier: "VerificationViewController") as! VerificationViewController
         present(vc, animated: true)
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
-

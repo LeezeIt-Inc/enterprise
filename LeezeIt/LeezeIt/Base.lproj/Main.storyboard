@@ -22,7 +22,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Button" cornerStyle="medium" titleAlignment="center"/>
                                 <connections>
-                                    <action selector="nextS:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WRd-fV-BPl"/>
+                                    <action selector="nextScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AAP-5M-Zec"/>
                                 </connections>
                             </button>
                         </subviews>
