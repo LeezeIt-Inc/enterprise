@@ -9,11 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBAction func gotoNextScreen() {
+        
+        let storyboard = UIStoryboard.init(name: "CreateAccount", bundle: nil)
+        let nextVc = storyboard.instantiateViewController(withIdentifier: "CreateAccountViewController") as! CreateAccountViewController
+        present(nextVc, animated: true)
     }
-
-
 }
 
