@@ -87,8 +87,12 @@
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
                                                                         <integer key="value" value="6"/>
                                                                     </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="minLegth">
+                                                                        <integer key="value" value="6"/>
+                                                                    </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
+                                                                    <action selector="passwordTextFieldAction:" destination="HvU-os-ka7" eventType="editingDidEnd" id="WPC-zn-hby"/>
                                                                     <outlet property="delegate" destination="HvU-os-ka7" id="x5Z-Zl-vp4"/>
                                                                 </connections>
                                                             </textField>
@@ -109,7 +113,7 @@
                                                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
-                                                                    <action selector="nextButton" destination="HvU-os-ka7" eventType="touchUpInside" id="k6N-ai-aWI"/>
+                                                                    <action selector="nextButtonAction" destination="HvU-os-ka7" eventType="touchUpInside" id="hAm-bI-xTj"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -146,10 +150,10 @@
                     </view>
                     <size key="freeformSize" width="414" height="950"/>
                     <connections>
-                        <outlet property="createButton" destination="ybn-y9-h5G" id="3rL-gt-eyp"/>
                         <outlet property="emailTextField" destination="fhp-4p-efM" id="yMf-So-Pw4"/>
                         <outlet property="firstNameTextField" destination="y1H-ll-ACe" id="Lf1-QU-Cyd"/>
                         <outlet property="lastNameTextField" destination="Ks0-C4-rlE" id="voZ-QW-Caa"/>
+                        <outlet property="nextButton" destination="ybn-y9-h5G" id="3rL-gt-eyp"/>
                         <outlet property="passwordTextField" destination="DdP-al-ZHS" id="fWa-Mq-cmd"/>
                     </connections>
                 </viewController>

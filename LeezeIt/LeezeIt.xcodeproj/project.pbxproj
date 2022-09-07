@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A09BDA3B28C7AD310033C7DC /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09BDA3A28C7AD310033C7DC /* TextField.swift */; };
 		A0C224CC28B6CE6B00D3A744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224CB28B6CE6B00D3A744 /* AppDelegate.swift */; };
 		A0C224CE28B6CE6B00D3A744 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224CD28B6CE6B00D3A744 /* SceneDelegate.swift */; };
 		A0C224D028B6CE6B00D3A744 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224CF28B6CE6B00D3A744 /* ViewController.swift */; };
@@ -39,7 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A09BDA3A28C7AD310033C7DC /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		A0C224C828B6CE6B00D3A744 /* LeezeIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeezeIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C224CB28B6CE6B00D3A744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0C224CD28B6CE6B00D3A744 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 				A0C224D128B6CE6B00D3A744 /* Main.storyboard */,
 				A0DAEBCF28C73939000C554B /* CreateAccountViewController.swift */,
 				A0DAEBD128C73951000C554B /* CreateAccount.storyboard */,
-				A09BDA3A28C7AD310033C7DC /* TextField.swift */,
 				A0C224D428B6CE6D00D3A744 /* Assets.xcassets */,
 				A0C224D628B6CE6D00D3A744 /* LaunchScreen.storyboard */,
 				A0C224D928B6CE6D00D3A744 /* Info.plist */,
@@ -271,7 +268,6 @@
 				A0DAEBD028C73939000C554B /* CreateAccountViewController.swift in Sources */,
 				A0C224D028B6CE6B00D3A744 /* ViewController.swift in Sources */,
 				A0C224CC28B6CE6B00D3A744 /* AppDelegate.swift in Sources */,
-				A09BDA3B28C7AD310033C7DC /* TextField.swift in Sources */,
 				A0C224CE28B6CE6B00D3A744 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

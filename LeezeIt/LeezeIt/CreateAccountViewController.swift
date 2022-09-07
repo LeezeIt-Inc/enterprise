@@ -13,13 +13,13 @@ class CreateAccountViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var createButton: UIButton!
+    @IBOutlet weak var nextButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.hideKeyboardWhenTappedView()
-        createButton.layer.cornerRadius = 10
+        modifyButton()
     }
     
     @IBAction func emailTextFieldAction() {
@@ -27,13 +27,19 @@ class CreateAccountViewController: UIViewController, UITextFieldDelegate {
         let validEmail = checkEmailFormat(email: emailTextField.text!)
         
         if validEmail == true {
-            createButton.isEnabled = true
+            nextButton.isEnabled = true
         } else {
-            createButton.isEnabled = false
+            nextButton.isEnabled = false
         }
     }
     
-    @IBAction func nextButton() {
+    @IBAction func passwordTextFieldAction(_ sender: Any) {
+        if passwordTextField.text!.count > 6 {
+            nextButton.isEnabled = true
+        }
+    }
+    
+    @IBAction func nextButtonAction() {
         showAlertOfMissingTextInTextField()
     }
 }
@@ -55,7 +61,7 @@ extension CreateAccountViewController {
         return emailFormat.evaluate(with: email)
     }
     
-    //        restrict user to enter numbers in textField
+    //        restrict user to enter numbers in name textFields
     private func textFieldEntries(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if textField == firstNameTextField || textField == lastNameTextField {
             let allowedCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -78,10 +84,10 @@ extension CreateAccountViewController {
             alertForMissingText(messageAlert: "Please write your first Name")
         } else if lastNameTextField.text == "" {
             alertForMissingText(messageAlert: "Please write your Last Name")
-        } else if emailTextField.text == "" {
-            alertForMissingText(messageAlert: "Please write your email")
-        } else if passwordTextField.text == "" {
-            alertForMissingText(messageAlert: "Please write your password")
         }
+    }
+    
+    func modifyButton() {
+        nextButton.layer.cornerRadius = 10
     }
 }
