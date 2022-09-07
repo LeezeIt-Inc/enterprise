@@ -16,4 +16,3 @@ class ViewController: UIViewController {
         present(nextVc, animated: true)
     }
 }
-

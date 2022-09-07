@@ -17,6 +17,7 @@ class CreateAccountViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.hideKeyboardWhenTappedView()
         createButton.layer.cornerRadius = 10
     }
@@ -36,7 +37,6 @@ class CreateAccountViewController: UIViewController, UITextFieldDelegate {
         showAlertOfMissingTextInTextField()
     }
 }
-
 
 extension CreateAccountViewController {
     
