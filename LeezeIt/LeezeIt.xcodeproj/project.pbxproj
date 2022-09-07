@@ -16,6 +16,7 @@
 		A0C224E328B6CE6D00D3A744 /* LeezeItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224E228B6CE6D00D3A744 /* LeezeItTests.swift */; };
 		A0C224ED28B6CE6D00D3A744 /* LeezeItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224EC28B6CE6D00D3A744 /* LeezeItUITests.swift */; };
 		A0C224EF28B6CE6D00D3A744 /* LeezeItUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224EE28B6CE6D00D3A744 /* LeezeItUITestsLaunchTests.swift */; };
+		A0CA509428C2AE4900621C40 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CA509328C2AE4900621C40 /* Buttons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A0C224E828B6CE6D00D3A744 /* LeezeItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeezeItUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C224EC28B6CE6D00D3A744 /* LeezeItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeezeItUITests.swift; sourceTree = "<group>"; };
 		A0C224EE28B6CE6D00D3A744 /* LeezeItUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeezeItUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A0CA509328C2AE4900621C40 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				A0C224CB28B6CE6B00D3A744 /* AppDelegate.swift */,
 				A0C224CD28B6CE6B00D3A744 /* SceneDelegate.swift */,
 				A0C224CF28B6CE6B00D3A744 /* ViewController.swift */,
+				A0CA509328C2AE4900621C40 /* Buttons.swift */,
 				A0C224D128B6CE6B00D3A744 /* Main.storyboard */,
 				A0C224D428B6CE6D00D3A744 /* Assets.xcassets */,
 				A0C224D628B6CE6D00D3A744 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 				A0C224D028B6CE6B00D3A744 /* ViewController.swift in Sources */,
 				A0C224CC28B6CE6B00D3A744 /* AppDelegate.swift in Sources */,
 				A0C224CE28B6CE6B00D3A744 /* SceneDelegate.swift in Sources */,
+				A0CA509428C2AE4900621C40 /* Buttons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
