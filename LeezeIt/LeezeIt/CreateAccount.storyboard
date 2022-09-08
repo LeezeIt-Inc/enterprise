@@ -75,7 +75,6 @@
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                                                 <connections>
-                                                                    <action selector="emailTextFieldAction" destination="HvU-os-ka7" eventType="editingDidEnd" id="QLM-oK-2mJ"/>
                                                                     <outlet property="delegate" destination="HvU-os-ka7" id="TdD-sO-e2r"/>
                                                                 </connections>
                                                             </textField>
@@ -92,7 +91,6 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="emailTextFieldAction" destination="HvU-os-ka7" eventType="editingDidEnd" id="0mp-2k-f8N"/>
                                                                     <outlet property="delegate" destination="HvU-os-ka7" id="x5Z-Zl-vp4"/>
                                                                 </connections>
                                                             </textField>

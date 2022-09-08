@@ -20,19 +20,10 @@ class CreateAccountViewController: UIViewController, UITextFieldDelegate {
         
         self.hideKeyboardWhenTappedView()
         modifyButton()
-    }
-    
-    @IBAction func emailTextFieldAction() {
+        enableNextButton()
         
-        let validEmail = checkEmailFormat(email: emailTextField.text!)
-        
-        if validEmail == true && passwordTextField.text!.count > 6 {
-            nextButton.isEnabled = true
-        } else {
-            nextButton.isEnabled = false
-        }
     }
-    
+        
     @IBAction func nextButtonAction() {
         showAlertOfMissingTextInTextField()
     }
@@ -56,6 +47,7 @@ extension CreateAccountViewController {
     }
     
     //        restrict user to enter numbers in name textFields
+    
     private func textFieldEntries(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if textField == firstNameTextField || textField == lastNameTextField {
             let allowedCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -83,5 +75,18 @@ extension CreateAccountViewController {
     
     func modifyButton() {
         nextButton.layer.cornerRadius = 10
+    }
+    
+    func enableNextButton() {
+        [passwordTextField, emailTextField].forEach({ $0.addTarget(self, action: #selector(editingChanged), for: .editingChanged) })
+    }
+    
+    @objc func editingChanged(_ textField: UITextField) {
+        
+        let validEmail = checkEmailFormat(email: emailTextField.text!)
+        
+        if validEmail == true && passwordTextField.text!.count > 6 {
+            nextButton.isEnabled = true
+        }
     }
 }
