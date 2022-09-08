@@ -92,7 +92,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="passwordTextFieldAction:" destination="HvU-os-ka7" eventType="editingDidEnd" id="WPC-zn-hby"/>
+                                                                    <action selector="emailTextFieldAction" destination="HvU-os-ka7" eventType="editingDidEnd" id="0mp-2k-f8N"/>
                                                                     <outlet property="delegate" destination="HvU-os-ka7" id="x5Z-Zl-vp4"/>
                                                                 </connections>
                                                             </textField>

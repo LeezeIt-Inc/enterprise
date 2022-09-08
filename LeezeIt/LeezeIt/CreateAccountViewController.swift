@@ -26,16 +26,10 @@ class CreateAccountViewController: UIViewController, UITextFieldDelegate {
         
         let validEmail = checkEmailFormat(email: emailTextField.text!)
         
-        if validEmail == true {
+        if validEmail == true && passwordTextField.text!.count > 6 {
             nextButton.isEnabled = true
         } else {
             nextButton.isEnabled = false
-        }
-    }
-    
-    @IBAction func passwordTextFieldAction(_ sender: Any) {
-        if passwordTextField.text!.count > 6 {
-            nextButton.isEnabled = true
         }
     }
     
