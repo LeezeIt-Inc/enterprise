@@ -19,6 +19,7 @@
 		A0C224E328B6CE6D00D3A744 /* LeezeItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224E228B6CE6D00D3A744 /* LeezeItTests.swift */; };
 		A0C224ED28B6CE6D00D3A744 /* LeezeItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224EC28B6CE6D00D3A744 /* LeezeItUITests.swift */; };
 		A0C224EF28B6CE6D00D3A744 /* LeezeItUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224EE28B6CE6D00D3A744 /* LeezeItUITestsLaunchTests.swift */; };
+		A0D29A9728CEE3D900878BD7 /* UnitTestPhoneNumberScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D29A9628CEE3D900878BD7 /* UnitTestPhoneNumberScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		A0C224E828B6CE6D00D3A744 /* LeezeItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeezeItUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C224EC28B6CE6D00D3A744 /* LeezeItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeezeItUITests.swift; sourceTree = "<group>"; };
 		A0C224EE28B6CE6D00D3A744 /* LeezeItUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeezeItUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A0D29A9628CEE3D900878BD7 /* UnitTestPhoneNumberScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestPhoneNumberScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				A0C224E228B6CE6D00D3A744 /* LeezeItTests.swift */,
+				A0D29A9628CEE3D900878BD7 /* UnitTestPhoneNumberScreen.swift */,
 			);
 			path = LeezeItTests;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0C224E328B6CE6D00D3A744 /* LeezeItTests.swift in Sources */,
+				A0D29A9728CEE3D900878BD7 /* UnitTestPhoneNumberScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
