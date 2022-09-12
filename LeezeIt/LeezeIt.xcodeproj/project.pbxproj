@@ -16,7 +16,6 @@
 		A0C224D328B6CE6B00D3A744 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C224D128B6CE6B00D3A744 /* Main.storyboard */; };
 		A0C224D528B6CE6D00D3A744 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0C224D428B6CE6D00D3A744 /* Assets.xcassets */; };
 		A0C224D828B6CE6D00D3A744 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C224D628B6CE6D00D3A744 /* LaunchScreen.storyboard */; };
-		A0C224E328B6CE6D00D3A744 /* LeezeItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224E228B6CE6D00D3A744 /* LeezeItTests.swift */; };
 		A0C224ED28B6CE6D00D3A744 /* LeezeItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224EC28B6CE6D00D3A744 /* LeezeItUITests.swift */; };
 		A0C224EF28B6CE6D00D3A744 /* LeezeItUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224EE28B6CE6D00D3A744 /* LeezeItUITestsLaunchTests.swift */; };
 		A0D29A9728CEE3D900878BD7 /* UnitTestPhoneNumberScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D29A9628CEE3D900878BD7 /* UnitTestPhoneNumberScreen.swift */; };
@@ -52,7 +51,6 @@
 		A0C224D728B6CE6D00D3A744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0C224D928B6CE6D00D3A744 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0C224DE28B6CE6D00D3A744 /* LeezeItTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeezeItTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0C224E228B6CE6D00D3A744 /* LeezeItTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeezeItTests.swift; sourceTree = "<group>"; };
 		A0C224E828B6CE6D00D3A744 /* LeezeItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeezeItUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C224EC28B6CE6D00D3A744 /* LeezeItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeezeItUITests.swift; sourceTree = "<group>"; };
 		A0C224EE28B6CE6D00D3A744 /* LeezeItUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeezeItUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -124,7 +122,6 @@
 		A0C224E128B6CE6D00D3A744 /* LeezeItTests */ = {
 			isa = PBXGroup;
 			children = (
-				A0C224E228B6CE6D00D3A744 /* LeezeItTests.swift */,
 				A0D29A9628CEE3D900878BD7 /* UnitTestPhoneNumberScreen.swift */,
 			);
 			path = LeezeItTests;
@@ -283,7 +280,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0C224E328B6CE6D00D3A744 /* LeezeItTests.swift in Sources */,
 				A0D29A9728CEE3D900878BD7 /* UnitTestPhoneNumberScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
