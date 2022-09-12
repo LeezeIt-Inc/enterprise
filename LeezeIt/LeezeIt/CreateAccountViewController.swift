@@ -23,7 +23,7 @@ class CreateAccountViewController: UIViewController, UITextFieldDelegate {
         enableNextButton()
         
     }
-        
+    
     @IBAction func nextButtonAction() {
         showAlertOfMissingTextInTextField()
     }
@@ -50,13 +50,18 @@ extension CreateAccountViewController {
     
     internal func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if textField == firstNameTextField || textField == lastNameTextField {
-            let allowedCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-            let allowedCharacterSet = CharacterSet(charactersIn: allowedCharacters)
-            let typedCharacterSet = CharacterSet(charactersIn: string)
-            let alphabet = allowedCharacterSet.isSuperset(of: typedCharacterSet)
-            return alphabet
+            
+            return checkTextField(string: string)
         }
         return true
+    }
+    
+    func checkTextField(string: String) -> Bool {
+        let allowedCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        let allowedCharacterSet = CharacterSet(charactersIn: allowedCharacters)
+        let typedCharacterSet = CharacterSet(charactersIn: string)
+        let alphabet = allowedCharacterSet.isSuperset(of: typedCharacterSet)
+        return alphabet
     }
     
     func alertForMissingText(messageAlert: String) {
