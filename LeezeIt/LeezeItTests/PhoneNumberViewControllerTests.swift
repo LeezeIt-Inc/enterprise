@@ -1,5 +1,5 @@
 //
-//  UnitTestPhoneNumberScreen.swift
+//  PhoneNumberViewControllerTests.swift
 //  LeezeItTests
 //
 //  Created by Riffat Khan on 9/11/22.
@@ -8,7 +8,7 @@
 import XCTest
 @testable import LeezeIt
 
-class UnitTestPhoneNumberScreen: XCTestCase {
+class PhoneNumberViewControllerTests: XCTestCase {
     
     var viewController =  PhoneNumberViewController()
     var phoneNumber = "16308273932"
@@ -16,7 +16,8 @@ class UnitTestPhoneNumberScreen: XCTestCase {
     
     func testNumberOfDigitsInTextField() {
 
-        XCTAssert(phoneNumber.count == 11 && phoneNumber.count < 12 && phoneNumber.count != 12)
+        XCTAssertEqual(phoneNumber.count, 11)
+        XCTAssertNotEqual(phoneNumber.count, 12)
     }
     
     func testRestrictUserToEntrAlphabetInPhoneNumberTextField() {
@@ -27,6 +28,7 @@ class UnitTestPhoneNumberScreen: XCTestCase {
     
     func testFormatOfPhoneNumber() {
        
-        XCTAssert(rejex == "+1 (630) 827-3932" && rejex != "1 (630) 827-3932")
+        XCTAssertEqual(rejex, "+1 (630) 827-3932")
+        XCTAssertNotEqual(rejex, "1(630)827-3932")
     }
 }
