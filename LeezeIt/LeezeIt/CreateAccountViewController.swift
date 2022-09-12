@@ -48,7 +48,7 @@ extension CreateAccountViewController {
     
     //        restrict user to enter numbers in name textFields
     
-    private func textFieldEntries(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    internal func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if textField == firstNameTextField || textField == lastNameTextField {
             let allowedCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
             let allowedCharacterSet = CharacterSet(charactersIn: allowedCharacters)
