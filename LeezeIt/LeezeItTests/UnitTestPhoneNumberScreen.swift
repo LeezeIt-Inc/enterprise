@@ -10,15 +10,23 @@ import XCTest
 
 class UnitTestPhoneNumberScreen: XCTestCase {
     
-    var sut =  PhoneNumberViewController()
+    var viewController =  PhoneNumberViewController()
+    var phoneNumber = "16308273932"
+    lazy var rejex = self.viewController.format(with: "+X (XXX) XXX-XXXX", phone: phoneNumber)
     
-    func test_Number_Of_Digits_in_Fields() {
-        let phoneNumber = "16308273932"
-        let rejex = sut.format(with: "+X (XXX) XXX-XXXX", phone: phoneNumber)
-        
-        XCTAssert(rejex == "+1 (630) 827-3932" && rejex != "1 (630) 827-3932")
+    func testNumberOfDigitsInTextField() {
+
+        XCTAssert(phoneNumber.count == 11 && phoneNumber.count < 12 && phoneNumber.count != 12)
+    }
+    
+    func testRestrictUserToEntrAlphabetInPhoneNumberTextField() {
+       
         XCTAssert(rejex != "A")
         XCTAssert(rejex != "")
-        XCTAssert(phoneNumber.count == 11 && phoneNumber.count < 12 && phoneNumber.count != 12)
+    }
+    
+    func testFormatOfPhoneNumber() {
+       
+        XCTAssert(rejex == "+1 (630) 827-3932" && rejex != "1 (630) 827-3932")
     }
 }
