@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		552C2EBF28BD9EEA002CA571 /* PhoneNumberViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 552C2EBE28BD9EEA002CA571 /* PhoneNumberViewController.storyboard */; };
+		552C2EC128BD9F30002CA571 /* PhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552C2EC028BD9F30002CA571 /* PhoneNumberViewController.swift */; };
+		552C2EE528BE9B22002CA571 /* TextFieldMaxLengths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552C2EE428BE9B22002CA571 /* TextFieldMaxLengths.swift */; };
 		5573990F28C1044100205375 /* VerificationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5573990E28C1044100205375 /* VerificationViewController.storyboard */; };
 		5573991128C1047100205375 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5573991028C1047100205375 /* VerificationViewController.swift */; };
 		A0C224CC28B6CE6B00D3A744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224CB28B6CE6B00D3A744 /* AppDelegate.swift */; };
@@ -18,6 +21,7 @@
 		A0C224E328B6CE6D00D3A744 /* LeezeItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224E228B6CE6D00D3A744 /* LeezeItTests.swift */; };
 		A0C224ED28B6CE6D00D3A744 /* LeezeItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224EC28B6CE6D00D3A744 /* LeezeItUITests.swift */; };
 		A0C224EF28B6CE6D00D3A744 /* LeezeItUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224EE28B6CE6D00D3A744 /* LeezeItUITestsLaunchTests.swift */; };
+		A0CA509428C2AE4900621C40 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CA509328C2AE4900621C40 /* Buttons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		552C2EBE28BD9EEA002CA571 /* PhoneNumberViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhoneNumberViewController.storyboard; sourceTree = "<group>"; };
+		552C2EC028BD9F30002CA571 /* PhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewController.swift; sourceTree = "<group>"; };
+		552C2EE428BE9B22002CA571 /* TextFieldMaxLengths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldMaxLengths.swift; sourceTree = "<group>"; };
 		5573990E28C1044100205375 /* VerificationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VerificationViewController.storyboard; sourceTree = "<group>"; };
 		5573991028C1047100205375 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
 		A0C224C828B6CE6B00D3A744 /* LeezeIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeezeIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +60,7 @@
 		A0C224E828B6CE6D00D3A744 /* LeezeItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeezeItUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C224EC28B6CE6D00D3A744 /* LeezeItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeezeItUITests.swift; sourceTree = "<group>"; };
 		A0C224EE28B6CE6D00D3A744 /* LeezeItUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeezeItUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A0CA509328C2AE4900621C40 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,9 +114,13 @@
 				A0C224CB28B6CE6B00D3A744 /* AppDelegate.swift */,
 				A0C224CD28B6CE6B00D3A744 /* SceneDelegate.swift */,
 				A0C224CF28B6CE6B00D3A744 /* ViewController.swift */,
+				A0CA509328C2AE4900621C40 /* Buttons.swift */,
+				552C2EC028BD9F30002CA571 /* PhoneNumberViewController.swift */,
 				5573990E28C1044100205375 /* VerificationViewController.storyboard */,
 				5573991028C1047100205375 /* VerificationViewController.swift */,
 				A0C224D128B6CE6B00D3A744 /* Main.storyboard */,
+				552C2EBE28BD9EEA002CA571 /* PhoneNumberViewController.storyboard */,
+				552C2EE428BE9B22002CA571 /* TextFieldMaxLengths.swift */,
 				A0C224D428B6CE6D00D3A744 /* Assets.xcassets */,
 				A0C224D628B6CE6D00D3A744 /* LaunchScreen.storyboard */,
 				A0C224D928B6CE6D00D3A744 /* Info.plist */,
@@ -240,6 +252,7 @@
 				5573990F28C1044100205375 /* VerificationViewController.storyboard in Resources */,
 				A0C224D828B6CE6D00D3A744 /* LaunchScreen.storyboard in Resources */,
 				A0C224D528B6CE6D00D3A744 /* Assets.xcassets in Resources */,
+				552C2EBF28BD9EEA002CA571 /* PhoneNumberViewController.storyboard in Resources */,
 				A0C224D328B6CE6B00D3A744 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,10 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				552C2EC128BD9F30002CA571 /* PhoneNumberViewController.swift in Sources */,
 				A0C224D028B6CE6B00D3A744 /* ViewController.swift in Sources */,
 				A0C224CC28B6CE6B00D3A744 /* AppDelegate.swift in Sources */,
+				552C2EE528BE9B22002CA571 /* TextFieldMaxLengths.swift in Sources */,
 				5573991128C1047100205375 /* VerificationViewController.swift in Sources */,
 				A0C224CE28B6CE6B00D3A744 /* SceneDelegate.swift in Sources */,
+				A0CA509428C2AE4900621C40 /* Buttons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +390,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -428,7 +444,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
