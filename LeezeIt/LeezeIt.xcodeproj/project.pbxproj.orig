@@ -19,9 +19,12 @@
 		A0C224E328B6CE6D00D3A744 /* LeezeItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224E228B6CE6D00D3A744 /* LeezeItTests.swift */; };
 		A0C224ED28B6CE6D00D3A744 /* LeezeItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224EC28B6CE6D00D3A744 /* LeezeItUITests.swift */; };
 		A0C224EF28B6CE6D00D3A744 /* LeezeItUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224EE28B6CE6D00D3A744 /* LeezeItUITestsLaunchTests.swift */; };
-		A0CA509428C2AE4900621C40 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CA509328C2AE4900621C40 /* Buttons.swift */; };
+<<<<<<< .merge_file_2XgJ20
 		A0DAEBD028C73939000C554B /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DAEBCF28C73939000C554B /* CreateAccountViewController.swift */; };
 		A0DAEBD228C73951000C554B /* CreateAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0DAEBD128C73951000C554B /* CreateAccount.storyboard */; };
+=======
+		A0CA509428C2AE4900621C40 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CA509328C2AE4900621C40 /* Buttons.swift */; };
+>>>>>>> .merge_file_FlE33Y
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,9 +61,12 @@
 		A0C224E828B6CE6D00D3A744 /* LeezeItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeezeItUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C224EC28B6CE6D00D3A744 /* LeezeItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeezeItUITests.swift; sourceTree = "<group>"; };
 		A0C224EE28B6CE6D00D3A744 /* LeezeItUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeezeItUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		A0CA509328C2AE4900621C40 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+<<<<<<< .merge_file_2XgJ20
 		A0DAEBCF28C73939000C554B /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		A0DAEBD128C73951000C554B /* CreateAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateAccount.storyboard; sourceTree = "<group>"; };
+=======
+		A0CA509328C2AE4900621C40 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+>>>>>>> .merge_file_FlE33Y
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,10 +123,13 @@
 				A0CA509328C2AE4900621C40 /* Buttons.swift */,
 				552C2EC028BD9F30002CA571 /* PhoneNumberViewController.swift */,
 				A0C224D128B6CE6B00D3A744 /* Main.storyboard */,
-				552C2EBE28BD9EEA002CA571 /* PhoneNumberViewController.storyboard */,
-				552C2EE428BE9B22002CA571 /* TextFieldMaxLengths.swift */,
+<<<<<<< .merge_file_2XgJ20
 				A0DAEBCF28C73939000C554B /* CreateAccountViewController.swift */,
 				A0DAEBD128C73951000C554B /* CreateAccount.storyboard */,
+=======
+				552C2EBE28BD9EEA002CA571 /* PhoneNumberViewController.storyboard */,
+				552C2EE428BE9B22002CA571 /* TextFieldMaxLengths.swift */,
+>>>>>>> .merge_file_FlE33Y
 				A0C224D428B6CE6D00D3A744 /* Assets.xcassets */,
 				A0C224D628B6CE6D00D3A744 /* LaunchScreen.storyboard */,
 				A0C224D928B6CE6D00D3A744 /* Info.plist */,
@@ -278,8 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				552C2EC128BD9F30002CA571 /* PhoneNumberViewController.swift in Sources */,
+<<<<<<< .merge_file_2XgJ20
 				A0DAEBD028C73939000C554B /* CreateAccountViewController.swift in Sources */,
+=======
+				552C2EC128BD9F30002CA571 /* PhoneNumberViewController.swift in Sources */,
+>>>>>>> .merge_file_FlE33Y
 				A0C224D028B6CE6B00D3A744 /* ViewController.swift in Sources */,
 				A0C224CC28B6CE6B00D3A744 /* AppDelegate.swift in Sources */,
 				552C2EE528BE9B22002CA571 /* TextFieldMaxLengths.swift in Sources */,
