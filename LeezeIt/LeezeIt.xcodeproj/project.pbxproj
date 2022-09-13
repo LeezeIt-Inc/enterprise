@@ -10,6 +10,8 @@
 		552C2EBF28BD9EEA002CA571 /* PhoneNumberViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 552C2EBE28BD9EEA002CA571 /* PhoneNumberViewController.storyboard */; };
 		552C2EC128BD9F30002CA571 /* PhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552C2EC028BD9F30002CA571 /* PhoneNumberViewController.swift */; };
 		552C2EE528BE9B22002CA571 /* TextFieldMaxLengths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552C2EE428BE9B22002CA571 /* TextFieldMaxLengths.swift */; };
+		5573990F28C1044100205375 /* VerificationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5573990E28C1044100205375 /* VerificationViewController.storyboard */; };
+		5573991128C1047100205375 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5573991028C1047100205375 /* VerificationViewController.swift */; };
 		A0C224CC28B6CE6B00D3A744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224CB28B6CE6B00D3A744 /* AppDelegate.swift */; };
 		A0C224CE28B6CE6B00D3A744 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224CD28B6CE6B00D3A744 /* SceneDelegate.swift */; };
 		A0C224D028B6CE6B00D3A744 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224CF28B6CE6B00D3A744 /* ViewController.swift */; };
@@ -43,6 +45,8 @@
 		552C2EBE28BD9EEA002CA571 /* PhoneNumberViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhoneNumberViewController.storyboard; sourceTree = "<group>"; };
 		552C2EC028BD9F30002CA571 /* PhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewController.swift; sourceTree = "<group>"; };
 		552C2EE428BE9B22002CA571 /* TextFieldMaxLengths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldMaxLengths.swift; sourceTree = "<group>"; };
+		5573990E28C1044100205375 /* VerificationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VerificationViewController.storyboard; sourceTree = "<group>"; };
+		5573991028C1047100205375 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
 		A0C224C828B6CE6B00D3A744 /* LeezeIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeezeIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C224CB28B6CE6B00D3A744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0C224CD28B6CE6B00D3A744 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 				A0C224CF28B6CE6B00D3A744 /* ViewController.swift */,
 				A0CA509328C2AE4900621C40 /* Buttons.swift */,
 				552C2EC028BD9F30002CA571 /* PhoneNumberViewController.swift */,
+				5573990E28C1044100205375 /* VerificationViewController.storyboard */,
+				5573991028C1047100205375 /* VerificationViewController.swift */,
 				A0C224D128B6CE6B00D3A744 /* Main.storyboard */,
 				552C2EBE28BD9EEA002CA571 /* PhoneNumberViewController.storyboard */,
 				552C2EE428BE9B22002CA571 /* TextFieldMaxLengths.swift */,
@@ -243,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5573990F28C1044100205375 /* VerificationViewController.storyboard in Resources */,
 				A0C224D828B6CE6D00D3A744 /* LaunchScreen.storyboard in Resources */,
 				A0C224D528B6CE6D00D3A744 /* Assets.xcassets in Resources */,
 				552C2EBF28BD9EEA002CA571 /* PhoneNumberViewController.storyboard in Resources */,
@@ -275,6 +282,7 @@
 				A0C224D028B6CE6B00D3A744 /* ViewController.swift in Sources */,
 				A0C224CC28B6CE6B00D3A744 /* AppDelegate.swift in Sources */,
 				552C2EE528BE9B22002CA571 /* TextFieldMaxLengths.swift in Sources */,
+				5573991128C1047100205375 /* VerificationViewController.swift in Sources */,
 				A0C224CE28B6CE6B00D3A744 /* SceneDelegate.swift in Sources */,
 				A0CA509428C2AE4900621C40 /* Buttons.swift in Sources */,
 			);
