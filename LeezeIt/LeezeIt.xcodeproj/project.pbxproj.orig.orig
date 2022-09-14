@@ -21,9 +21,12 @@
 		A0C224ED28B6CE6D00D3A744 /* LeezeItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224EC28B6CE6D00D3A744 /* LeezeItUITests.swift */; };
 		A0C224EF28B6CE6D00D3A744 /* LeezeItUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224EE28B6CE6D00D3A744 /* LeezeItUITestsLaunchTests.swift */; };
 		A0CA509428C2AE4900621C40 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CA509328C2AE4900621C40 /* Buttons.swift */; };
+<<<<<<< HEAD
 		A0D29A9728CEE3D900878BD7 /* PhoneNumberViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D29A9628CEE3D900878BD7 /* PhoneNumberViewControllerTests.swift */; };
+=======
 		A0DAEBD028C73939000C554B /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DAEBCF28C73939000C554B /* CreateAccountViewController.swift */; };
 		A0DAEBD228C73951000C554B /* CreateAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0DAEBD128C73951000C554B /* CreateAccount.storyboard */; };
+>>>>>>> ef51b3aa94dac615961d05a04e349191754fefad
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +65,12 @@
 		A0C224EC28B6CE6D00D3A744 /* LeezeItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeezeItUITests.swift; sourceTree = "<group>"; };
 		A0C224EE28B6CE6D00D3A744 /* LeezeItUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeezeItUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A0CA509328C2AE4900621C40 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
+		A0D29A9628CEE3D900878BD7 /* PhoneNumberViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewControllerTests.swift; sourceTree = "<group>"; };
+=======
 		A0DAEBCF28C73939000C554B /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		A0DAEBD128C73951000C554B /* CreateAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateAccount.storyboard; sourceTree = "<group>"; };
+>>>>>>> ef51b3aa94dac615961d05a04e349191754fefad
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
