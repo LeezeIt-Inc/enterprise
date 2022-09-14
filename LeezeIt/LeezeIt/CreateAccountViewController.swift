@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftKeychainWrapper
 
 class CreateAccountViewController: UIViewController, UITextFieldDelegate {
     
@@ -21,11 +22,23 @@ class CreateAccountViewController: UIViewController, UITextFieldDelegate {
         self.hideKeyboardWhenTappedView()
         modifyButton()
         enableNextButton()
-        
+//        retrievingData()
+    }
+    
+    func retrievingData() {
+        let keyChainEmailData = KeychainWrapper.standard.string(forKey: "myEmail")
+        let keyChainPasswordData = KeychainWrapper.standard.string(forKey: "myPassword")
+        if keyChainEmailData != nil && keyChainPasswordData != nil {
+            emailTextField.text = keyChainEmailData
+            passwordTextField.text = keyChainPasswordData
+        }
     }
     
     @IBAction func nextButtonAction() {
         showAlertOfMissingTextInTextField()
+        
+        KeychainWrapper.standard.set(emailTextField.text ?? "", forKey: "myEmail")
+        KeychainWrapper.standard.set(passwordTextField.text ?? "", forKey: "myPassword")
     }
 }
 
