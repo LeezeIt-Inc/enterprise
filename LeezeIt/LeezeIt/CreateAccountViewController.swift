@@ -20,12 +20,30 @@ class CreateAccountViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         self.hideKeyboardWhenTappedView()
-        modifyButton()
-        enableNextButton()
-//        retrievingData()
+         viewDidLoadMethods()
     }
     
-    func retrievingData() {
+    @IBAction func nextButtonAction() {
+        showAlertOfMissingTextInTextField()
+        savingDataInkeyChain()
+
+    }
+}
+
+extension CreateAccountViewController {
+    
+    func viewDidLoadMethods() {
+        modifyButton()
+        enableNextButton()
+        retrievingDataFromKeyChain()
+    }
+    
+    func savingDataInkeyChain() {
+        KeychainWrapper.standard.set(emailTextField.text ?? "", forKey: "myEmail")
+        KeychainWrapper.standard.set(passwordTextField.text ?? "", forKey: "myPassword")
+    }
+    
+    func retrievingDataFromKeyChain() {
         let keyChainEmailData = KeychainWrapper.standard.string(forKey: "myEmail")
         let keyChainPasswordData = KeychainWrapper.standard.string(forKey: "myPassword")
         if keyChainEmailData != nil && keyChainPasswordData != nil {
@@ -33,16 +51,6 @@ class CreateAccountViewController: UIViewController, UITextFieldDelegate {
             passwordTextField.text = keyChainPasswordData
         }
     }
-    
-    @IBAction func nextButtonAction() {
-        showAlertOfMissingTextInTextField()
-        
-        KeychainWrapper.standard.set(emailTextField.text ?? "", forKey: "myEmail")
-        KeychainWrapper.standard.set(passwordTextField.text ?? "", forKey: "myPassword")
-    }
-}
-
-extension CreateAccountViewController {
     
     func hideKeyboardWhenTappedView() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
