@@ -34,9 +34,4 @@ import XCTest
      func testTextFieldDoesntAcceptSymbols() {
          XCTAssertFalse(viewController.checkTextField(string: "#"))
      }
-     
-    // func testPassWordIsSecureEntry() throws {
-       //  let passwordTest =  try? //XCTUnwrap(viewController.passwordTextField)
-        // XCTAssert((passwordTest!.isSecureTextEntry) )
-   //  }
 }
