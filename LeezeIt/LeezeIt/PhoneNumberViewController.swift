@@ -34,11 +34,20 @@ class PhoneNumberViewController:UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
+        
+        fetchUserDefaultData()
+ }
     
     @IBAction func nextButton(_ sender: Any) {
+        UserDefaults.standard.set(phoneNumberText.text!, forKey: "userPhoneNumber")
     }
     
+    func fetchUserDefaultData () {
+        let valueOfPhoneNumber = UserDefaults.standard.string(forKey: "userPhoneNumber")
+        if valueOfPhoneNumber != nil {
+            phoneNumberText.text = valueOfPhoneNumber
+        }
+    }
 }
 
 extension PhoneNumberViewController : UITextFieldDelegate {
