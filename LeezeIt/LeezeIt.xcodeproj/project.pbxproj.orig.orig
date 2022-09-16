@@ -10,11 +10,8 @@
 		552C2EBF28BD9EEA002CA571 /* PhoneNumberViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 552C2EBE28BD9EEA002CA571 /* PhoneNumberViewController.storyboard */; };
 		552C2EC128BD9F30002CA571 /* PhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552C2EC028BD9F30002CA571 /* PhoneNumberViewController.swift */; };
 		552C2EE528BE9B22002CA571 /* TextFieldMaxLengths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552C2EE428BE9B22002CA571 /* TextFieldMaxLengths.swift */; };
-		554A2E4B28D12EAD004BEC5C /* CreateAccountViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A2E4A28D12EAD004BEC5C /* CreateAccountViewControllerTests.swift */; };
 		5573990F28C1044100205375 /* VerificationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5573990E28C1044100205375 /* VerificationViewController.storyboard */; };
 		5573991128C1047100205375 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5573991028C1047100205375 /* VerificationViewController.swift */; };
-		83CF060D28D447B500F91196 /* LeezeItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CF060B28D447B500F91196 /* LeezeItTests.swift */; };
-		83CF060E28D447B500F91196 /* PhoneNumberViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CF060C28D447B500F91196 /* PhoneNumberViewControllerTests.swift */; };
 		A0C224CC28B6CE6B00D3A744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224CB28B6CE6B00D3A744 /* AppDelegate.swift */; };
 		A0C224CE28B6CE6B00D3A744 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224CD28B6CE6B00D3A744 /* SceneDelegate.swift */; };
 		A0C224D028B6CE6B00D3A744 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224CF28B6CE6B00D3A744 /* ViewController.swift */; };
@@ -24,9 +21,12 @@
 		A0C224ED28B6CE6D00D3A744 /* LeezeItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224EC28B6CE6D00D3A744 /* LeezeItUITests.swift */; };
 		A0C224EF28B6CE6D00D3A744 /* LeezeItUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224EE28B6CE6D00D3A744 /* LeezeItUITestsLaunchTests.swift */; };
 		A0CA509428C2AE4900621C40 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CA509328C2AE4900621C40 /* Buttons.swift */; };
-		A0D29A9728CEE3D900878BD7 /* (null) in Sources */ = {isa = PBXBuildFile; };
+<<<<<<< HEAD
+		A0D29A9728CEE3D900878BD7 /* PhoneNumberViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D29A9628CEE3D900878BD7 /* PhoneNumberViewControllerTests.swift */; };
+=======
 		A0DAEBD028C73939000C554B /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DAEBCF28C73939000C554B /* CreateAccountViewController.swift */; };
 		A0DAEBD228C73951000C554B /* CreateAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0DAEBD128C73951000C554B /* CreateAccount.storyboard */; };
+>>>>>>> ef51b3aa94dac615961d05a04e349191754fefad
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,11 +50,8 @@
 		552C2EBE28BD9EEA002CA571 /* PhoneNumberViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhoneNumberViewController.storyboard; sourceTree = "<group>"; };
 		552C2EC028BD9F30002CA571 /* PhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewController.swift; sourceTree = "<group>"; };
 		552C2EE428BE9B22002CA571 /* TextFieldMaxLengths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldMaxLengths.swift; sourceTree = "<group>"; };
-		554A2E4A28D12EAD004BEC5C /* CreateAccountViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewControllerTests.swift; sourceTree = "<group>"; };
 		5573990E28C1044100205375 /* VerificationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VerificationViewController.storyboard; sourceTree = "<group>"; };
 		5573991028C1047100205375 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
-		83CF060B28D447B500F91196 /* LeezeItTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeezeItTests.swift; sourceTree = "<group>"; };
-		83CF060C28D447B500F91196 /* PhoneNumberViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewControllerTests.swift; sourceTree = "<group>"; };
 		A0C224C828B6CE6B00D3A744 /* LeezeIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeezeIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C224CB28B6CE6B00D3A744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0C224CD28B6CE6B00D3A744 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,8 +65,12 @@
 		A0C224EC28B6CE6D00D3A744 /* LeezeItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeezeItUITests.swift; sourceTree = "<group>"; };
 		A0C224EE28B6CE6D00D3A744 /* LeezeItUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeezeItUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A0CA509328C2AE4900621C40 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
+		A0D29A9628CEE3D900878BD7 /* PhoneNumberViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewControllerTests.swift; sourceTree = "<group>"; };
+=======
 		A0DAEBCF28C73939000C554B /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		A0DAEBD128C73951000C554B /* CreateAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateAccount.storyboard; sourceTree = "<group>"; };
+>>>>>>> ef51b3aa94dac615961d05a04e349191754fefad
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,10 +143,7 @@
 		A0C224E128B6CE6D00D3A744 /* LeezeItTests */ = {
 			isa = PBXGroup;
 			children = (
-				83CF060B28D447B500F91196 /* LeezeItTests.swift */,
-				83CF060C28D447B500F91196 /* PhoneNumberViewControllerTests.swift */,
-				A0C224E228B6CE6D00D3A744 /* LeezeItTests.swift */,
-				554A2E4A28D12EAD004BEC5C /* CreateAccountViewControllerTests.swift */,
+				A0D29A9628CEE3D900878BD7 /* PhoneNumberViewControllerTests.swift */,
 			);
 			path = LeezeItTests;
 			sourceTree = "<group>";
@@ -230,7 +228,6 @@
 					};
 					A0C224DD28B6CE6D00D3A744 = {
 						CreatedOnToolsVersion = 13.4;
-						LastSwiftMigration = 1400;
 						TestTargetID = A0C224C728B6CE6B00D3A744;
 					};
 					A0C224E728B6CE6D00D3A744 = {
@@ -309,11 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83CF060D28D447B500F91196 /* LeezeItTests.swift in Sources */,
-				A0D29A9728CEE3D900878BD7 /* (null) in Sources */,
-				83CF060E28D447B500F91196 /* PhoneNumberViewControllerTests.swift in Sources */,
-				554A2E4B28D12EAD004BEC5C /* CreateAccountViewControllerTests.swift in Sources */,
-				A0C224E328B6CE6D00D3A744 /* LeezeItTests.swift in Sources */,
+				A0D29A9728CEE3D900878BD7 /* PhoneNumberViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,21 +527,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = student.LeezeItTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeezeIt.app/LeezeIt";
@@ -560,16 +546,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = student.LeezeItTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
