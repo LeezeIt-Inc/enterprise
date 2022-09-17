@@ -58,6 +58,10 @@ class ViewController: UIViewController {
     
     @objc func signUP(_ sender: UIButton) {
         print("signUp Button Tapped")
+        let storyBoard = UIStoryboard(name: "PhoneNumberViewController", bundle: nil)
+        
+ let nextvc = storyBoard.instantiateViewController(withIdentifier: "PhoneNumberViewController") as! PhoneNumberViewController
+       present(nextvc, animated: true)
     }
 }
 
