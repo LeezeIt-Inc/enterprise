@@ -15,6 +15,7 @@
 		5573991128C1047100205375 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5573991028C1047100205375 /* VerificationViewController.swift */; };
 		83CF060D28D447B500F91196 /* LeezeItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CF060B28D447B500F91196 /* LeezeItTests.swift */; };
 		83CF060E28D447B500F91196 /* PhoneNumberViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CF060C28D447B500F91196 /* PhoneNumberViewControllerTests.swift */; };
+		83CCB08A740A37F232E6F8BF /* Pods_LeezeIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80A8886D765F9A0E2DCA834D /* Pods_LeezeIt.framework */; };
 		A0C224CC28B6CE6B00D3A744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224CB28B6CE6B00D3A744 /* AppDelegate.swift */; };
 		A0C224CE28B6CE6B00D3A744 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224CD28B6CE6B00D3A744 /* SceneDelegate.swift */; };
 		A0C224D028B6CE6B00D3A744 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224CF28B6CE6B00D3A744 /* ViewController.swift */; };
@@ -27,6 +28,8 @@
 		A0D29A9728CEE3D900878BD7 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		A0DAEBD028C73939000C554B /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DAEBCF28C73939000C554B /* CreateAccountViewController.swift */; };
 		A0DAEBD228C73951000C554B /* CreateAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0DAEBD128C73951000C554B /* CreateAccount.storyboard */; };
+		D9CD9018F4A7CD685DD6E7D7 /* Pods_LeezeItTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD0EE8A23C23FCD564C05DF /* Pods_LeezeItTests.framework */; };
+		EBBA233050001DE401DCF433 /* Pods_LeezeIt_LeezeItUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D32EEF578D547599907199 /* Pods_LeezeIt_LeezeItUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		189E5535BEBAB0F870BC00F8 /* Pods-LeezeIt-LeezeItUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeezeIt-LeezeItUITests.release.xcconfig"; path = "Target Support Files/Pods-LeezeIt-LeezeItUITests/Pods-LeezeIt-LeezeItUITests.release.xcconfig"; sourceTree = "<group>"; };
+		20D32EEF578D547599907199 /* Pods_LeezeIt_LeezeItUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeezeIt_LeezeItUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		523303AC71B22628D17EF96A /* Pods-LeezeItTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeezeItTests.release.xcconfig"; path = "Target Support Files/Pods-LeezeItTests/Pods-LeezeItTests.release.xcconfig"; sourceTree = "<group>"; };
 		552C2EBE28BD9EEA002CA571 /* PhoneNumberViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhoneNumberViewController.storyboard; sourceTree = "<group>"; };
 		552C2EC028BD9F30002CA571 /* PhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewController.swift; sourceTree = "<group>"; };
 		552C2EE428BE9B22002CA571 /* TextFieldMaxLengths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldMaxLengths.swift; sourceTree = "<group>"; };
@@ -70,6 +76,11 @@
 		A0CA509328C2AE4900621C40 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		A0DAEBCF28C73939000C554B /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		A0DAEBD128C73951000C554B /* CreateAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateAccount.storyboard; sourceTree = "<group>"; };
+		B841D255D42D566F3B0597FB /* Pods-LeezeIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeezeIt.debug.xcconfig"; path = "Target Support Files/Pods-LeezeIt/Pods-LeezeIt.debug.xcconfig"; sourceTree = "<group>"; };
+		BAD0EE8A23C23FCD564C05DF /* Pods_LeezeItTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeezeItTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C675016AD3CA07B110287AD1 /* Pods-LeezeIt-LeezeItUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeezeIt-LeezeItUITests.debug.xcconfig"; path = "Target Support Files/Pods-LeezeIt-LeezeItUITests/Pods-LeezeIt-LeezeItUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D018DB8F72293FB8E49A366B /* Pods-LeezeIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeezeIt.release.xcconfig"; path = "Target Support Files/Pods-LeezeIt/Pods-LeezeIt.release.xcconfig"; sourceTree = "<group>"; };
+		D6C349CE8AC640EE0D2954BC /* Pods-LeezeItTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeezeItTests.debug.xcconfig"; path = "Target Support Files/Pods-LeezeItTests/Pods-LeezeItTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83CCB08A740A37F232E6F8BF /* Pods_LeezeIt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9CD9018F4A7CD685DD6E7D7 /* Pods_LeezeItTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,12 +104,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBBA233050001DE401DCF433 /* Pods_LeezeIt_LeezeItUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4416E13E95A03A6855E2337B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B841D255D42D566F3B0597FB /* Pods-LeezeIt.debug.xcconfig */,
+				D018DB8F72293FB8E49A366B /* Pods-LeezeIt.release.xcconfig */,
+				C675016AD3CA07B110287AD1 /* Pods-LeezeIt-LeezeItUITests.debug.xcconfig */,
+				189E5535BEBAB0F870BC00F8 /* Pods-LeezeIt-LeezeItUITests.release.xcconfig */,
+				D6C349CE8AC640EE0D2954BC /* Pods-LeezeItTests.debug.xcconfig */,
+				523303AC71B22628D17EF96A /* Pods-LeezeItTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5EB656DC998D7DB70340319D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80A8886D765F9A0E2DCA834D /* Pods_LeezeIt.framework */,
+				20D32EEF578D547599907199 /* Pods_LeezeIt_LeezeItUITests.framework */,
+				BAD0EE8A23C23FCD564C05DF /* Pods_LeezeItTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A0C224BF28B6CE6B00D3A744 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +142,8 @@
 				A0C224E128B6CE6D00D3A744 /* LeezeItTests */,
 				A0C224EB28B6CE6D00D3A744 /* LeezeItUITests */,
 				A0C224C928B6CE6B00D3A744 /* Products */,
+				4416E13E95A03A6855E2337B /* Pods */,
+				5EB656DC998D7DB70340319D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,9 +206,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0C224F228B6CE6D00D3A744 /* Build configuration list for PBXNativeTarget "LeezeIt" */;
 			buildPhases = (
+				25C9F76C4BEF7F9EE0F8D068 /* [CP] Check Pods Manifest.lock */,
 				A0C224C428B6CE6B00D3A744 /* Sources */,
 				A0C224C528B6CE6B00D3A744 /* Frameworks */,
 				A0C224C628B6CE6B00D3A744 /* Resources */,
+				FA11E8288C65EDB258D30DED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,6 +225,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0C224F528B6CE6D00D3A744 /* Build configuration list for PBXNativeTarget "LeezeItTests" */;
 			buildPhases = (
+				BCD01F13F99D1C4CBA74D2CF /* [CP] Check Pods Manifest.lock */,
 				A0C224DA28B6CE6D00D3A744 /* Sources */,
 				A0C224DB28B6CE6D00D3A744 /* Frameworks */,
 				A0C224DC28B6CE6D00D3A744 /* Resources */,
@@ -201,9 +244,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0C224F828B6CE6D00D3A744 /* Build configuration list for PBXNativeTarget "LeezeItUITests" */;
 			buildPhases = (
+				9D5932F22B8D685F069C08CE /* [CP] Check Pods Manifest.lock */,
 				A0C224E428B6CE6D00D3A744 /* Sources */,
 				A0C224E528B6CE6D00D3A744 /* Frameworks */,
 				A0C224E628B6CE6D00D3A744 /* Resources */,
+				7120A96CF728D03897FB75CC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -288,6 +333,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25C9F76C4BEF7F9EE0F8D068 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LeezeIt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7120A96CF728D03897FB75CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LeezeIt-LeezeItUITests/Pods-LeezeIt-LeezeItUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LeezeIt-LeezeItUITests/Pods-LeezeIt-LeezeItUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LeezeIt-LeezeItUITests/Pods-LeezeIt-LeezeItUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D5932F22B8D685F069C08CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LeezeIt-LeezeItUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCD01F13F99D1C4CBA74D2CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LeezeItTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA11E8288C65EDB258D30DED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LeezeIt/Pods-LeezeIt-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LeezeIt/Pods-LeezeIt-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LeezeIt/Pods-LeezeIt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A0C224C428B6CE6B00D3A744 /* Sources */ = {
@@ -477,6 +625,7 @@
 		};
 		A0C224F328B6CE6D00D3A744 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B841D255D42D566F3B0597FB /* Pods-LeezeIt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -504,6 +653,7 @@
 		};
 		A0C224F428B6CE6D00D3A744 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D018DB8F72293FB8E49A366B /* Pods-LeezeIt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -531,6 +681,7 @@
 		};
 		A0C224F628B6CE6D00D3A744 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6C349CE8AC640EE0D2954BC /* Pods-LeezeItTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -557,6 +708,7 @@
 		};
 		A0C224F728B6CE6D00D3A744 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 523303AC71B22628D17EF96A /* Pods-LeezeItTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -582,6 +734,7 @@
 		};
 		A0C224F928B6CE6D00D3A744 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C675016AD3CA07B110287AD1 /* Pods-LeezeIt-LeezeItUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -599,6 +752,7 @@
 		};
 		A0C224FA28B6CE6D00D3A744 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 189E5535BEBAB0F870BC00F8 /* Pods-LeezeIt-LeezeItUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

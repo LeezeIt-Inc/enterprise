@@ -50,6 +50,10 @@ class ViewController: UIViewController {
     @objc func logIn(_ sender: UIButton) {
         print("LogIn Button Tapped")
         
+        let storyboard = UIStoryboard(name: "CreateAccount", bundle: nil)
+        let nextVc = (storyboard.instantiateViewController(withIdentifier: "CreateAccountViewController") as? CreateAccountViewController)
+        present(nextVc!, animated: true)
+        
     }
     
     @objc func signUP(_ sender: UIButton) {
