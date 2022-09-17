@@ -99,6 +99,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5530365328D66C7C00E9ED47 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A0C224CF28B6CE6B00D3A744 /* ViewController.swift */,
+				552C2EC028BD9F30002CA571 /* PhoneNumberViewController.swift */,
+				A0DAEBCF28C73939000C554B /* CreateAccountViewController.swift */,
+				5573991028C1047100205375 /* VerificationViewController.swift */,
+				A0CA509328C2AE4900621C40 /* Buttons.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5530365428D66CD400E9ED47 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A0C224D628B6CE6D00D3A744 /* LaunchScreen.storyboard */,
+				A0C224D128B6CE6B00D3A744 /* Main.storyboard */,
+				552C2EBE28BD9EEA002CA571 /* PhoneNumberViewController.storyboard */,
+				A0DAEBD128C73951000C554B /* CreateAccount.storyboard */,
+				5573990E28C1044100205375 /* VerificationViewController.storyboard */,
+				A0C224D428B6CE6D00D3A744 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5530365528D66CFF00E9ED47 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5530365628D66D0900E9ED47 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				5578D64228D59C940024E5A4 /* Enums_StoryBoard.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		5530365728D66D3F00E9ED47 /* Storyboard_Attribute */ = {
+			isa = PBXGroup;
+			children = (
+				552C2EE428BE9B22002CA571 /* TextFieldMaxLengths.swift */,
+			);
+			path = Storyboard_Attribute;
+			sourceTree = "<group>";
+		};
 		A0C224BF28B6CE6B00D3A744 = {
 			isa = PBXGroup;
 			children = (
@@ -123,20 +171,12 @@
 			isa = PBXGroup;
 			children = (
 				A0C224CB28B6CE6B00D3A744 /* AppDelegate.swift */,
-				5578D64228D59C940024E5A4 /* Enums_StoryBoard.swift */,
 				A0C224CD28B6CE6B00D3A744 /* SceneDelegate.swift */,
-				A0C224CF28B6CE6B00D3A744 /* ViewController.swift */,
-				A0CA509328C2AE4900621C40 /* Buttons.swift */,
-				552C2EC028BD9F30002CA571 /* PhoneNumberViewController.swift */,
-				5573990E28C1044100205375 /* VerificationViewController.storyboard */,
-				5573991028C1047100205375 /* VerificationViewController.swift */,
-				A0C224D128B6CE6B00D3A744 /* Main.storyboard */,
-				552C2EBE28BD9EEA002CA571 /* PhoneNumberViewController.storyboard */,
-				552C2EE428BE9B22002CA571 /* TextFieldMaxLengths.swift */,
-				A0DAEBCF28C73939000C554B /* CreateAccountViewController.swift */,
-				A0DAEBD128C73951000C554B /* CreateAccount.storyboard */,
-				A0C224D428B6CE6D00D3A744 /* Assets.xcassets */,
-				A0C224D628B6CE6D00D3A744 /* LaunchScreen.storyboard */,
+				5530365328D66C7C00E9ED47 /* Controller */,
+				5530365428D66CD400E9ED47 /* View */,
+				5530365528D66CFF00E9ED47 /* Model */,
+				5530365728D66D3F00E9ED47 /* Storyboard_Attribute */,
+				5530365628D66D0900E9ED47 /* Enums */,
 				A0C224D928B6CE6D00D3A744 /* Info.plist */,
 			);
 			path = LeezeIt;

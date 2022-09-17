@@ -40,6 +40,10 @@ class PhoneNumberViewController:UIViewController{
     
     @IBAction func nextButton(_ sender: Any) {
         UserDefaults.standard.set(phoneNumberText.text!, forKey: "userPhoneNumber")
+        let storyBoard = UIStoryboard(name:StoryBoardsID.VerificationViewController.rawValue, bundle: nil)
+        
+        let nextvc = storyBoard.instantiateViewController(withIdentifier: StoryBoardsID.VerificationViewController.rawValue) as! VerificationViewController
+       present(nextvc, animated: true)
     }
     
     func fetchUserDefaultData () {
