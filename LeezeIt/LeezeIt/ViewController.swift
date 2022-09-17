@@ -48,15 +48,17 @@ class ViewController: UIViewController {
     } 
 
     @objc func logIn(_ sender: UIButton) {
-        print("LogIn Button Tapped")
+      
+        let storyBoard = UIStoryboard(name:StoryBoardFileId.CreateAccountViewController.rawValue, bundle: nil)
         
+        let nextvc = storyBoard.instantiateViewController(withIdentifier: StoryBoardsID.CreateAccountViewController.rawValue) as! CreateAccountViewController
+       present(nextvc, animated: true)
     }
     
     @objc func signUP(_ sender: UIButton) {
-        print("signUp Button Tapped")
-        let storyBoard = UIStoryboard(name: "PhoneNumberViewController", bundle: nil)
+        let storyBoard = UIStoryboard(name:StoryBoardsID.PhoneNumberViewController.rawValue, bundle: nil)
         
- let nextvc = storyBoard.instantiateViewController(withIdentifier: "PhoneNumberViewController") as! PhoneNumberViewController
+        let nextvc = storyBoard.instantiateViewController(withIdentifier: StoryBoardsID.PhoneNumberViewController.rawValue) as! PhoneNumberViewController
        present(nextvc, animated: true)
     }
 }
