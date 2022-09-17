@@ -18,7 +18,7 @@ class SecondViewController: UIViewController {
     }
     
     @IBAction func nxtButton(_ sender: Any) {
-        let storyBoard = UIStoryboard(name: "ViewController", bundle: nil)
+        let storyBoard = UIStoryboard(name: "Storyboard", bundle: nil)
         
  let nextvc = storyBoard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
        present(nextvc, animated: true)

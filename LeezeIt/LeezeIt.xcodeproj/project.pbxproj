@@ -15,6 +15,7 @@
 		5573991128C1047100205375 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5573991028C1047100205375 /* VerificationViewController.swift */; };
 		83CF060D28D447B500F91196 /* LeezeItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CF060B28D447B500F91196 /* LeezeItTests.swift */; };
 		83CF060E28D447B500F91196 /* PhoneNumberViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CF060C28D447B500F91196 /* PhoneNumberViewControllerTests.swift */; };
+		A037D7C028D597C80086DFEE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A037D7BF28D597C80086DFEE /* Storyboard.storyboard */; };
 		A040F53A28D58CFA00120190 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A040F53928D58CFA00120190 /* Main.storyboard */; };
 		A040F53C28D58E0B00120190 /* AppTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A040F53B28D58E0B00120190 /* AppTutorialViewController.swift */; };
 		A040F53E28D5904400120190 /* FirstTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A040F53D28D5904400120190 /* FirstTutorialViewController.swift */; };
@@ -58,6 +59,7 @@
 		5573991028C1047100205375 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
 		83CF060B28D447B500F91196 /* LeezeItTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeezeItTests.swift; sourceTree = "<group>"; };
 		83CF060C28D447B500F91196 /* PhoneNumberViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewControllerTests.swift; sourceTree = "<group>"; };
+		A037D7BF28D597C80086DFEE /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		A040F53928D58CFA00120190 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A040F53B28D58E0B00120190 /* AppTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTutorialViewController.swift; sourceTree = "<group>"; };
 		A040F53D28D5904400120190 /* FirstTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTutorialViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				A0C224CB28B6CE6B00D3A744 /* AppDelegate.swift */,
 				A0C224CD28B6CE6B00D3A744 /* SceneDelegate.swift */,
 				A0C224CF28B6CE6B00D3A744 /* ViewController.swift */,
+				A037D7BF28D597C80086DFEE /* Storyboard.storyboard */,
 				A040F53D28D5904400120190 /* FirstTutorialViewController.swift */,
 				A040F53F28D5908800120190 /* SecondViewController.swift */,
 				A040F53B28D58E0B00120190 /* AppTutorialViewController.swift */,
@@ -277,6 +280,7 @@
 				A0C224D828B6CE6D00D3A744 /* LaunchScreen.storyboard in Resources */,
 				A0C224D528B6CE6D00D3A744 /* Assets.xcassets in Resources */,
 				552C2EBF28BD9EEA002CA571 /* PhoneNumberViewController.storyboard in Resources */,
+				A037D7C028D597C80086DFEE /* Storyboard.storyboard in Resources */,
 				A040F53A28D58CFA00120190 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
