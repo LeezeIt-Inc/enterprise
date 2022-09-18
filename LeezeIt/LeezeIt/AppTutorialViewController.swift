@@ -32,8 +32,8 @@ class AppTutorialViewController: UIPageViewController ,UIPageViewControllerDeleg
     func configurePageControll() {
         pageControll = UIPageControl(frame: CGRect(x:0 , y: 350, width:UIScreen.main.bounds.width , height:200 ))
         pageControll.numberOfPages = orderedViewControllers.count
+        pageControll.pageIndicatorTintColor = UIColor.systemGray
         pageControll.currentPageIndicatorTintColor = UIColor.systemMint
-        pageControll.pageIndicatorTintColor =  UIColor.systemGray
 
         self.view.addSubview(pageControll)
     }
@@ -73,5 +73,10 @@ class AppTutorialViewController: UIPageViewController ,UIPageViewControllerDeleg
     
     func newVc(viewController:String)->UIViewController{
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: viewController)
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished:Bool, previousViewControllers previousViewController: [UIViewController], transitionCompleted completed : Bool)  {
+        let pageContentViewController = pageViewController.viewControllers![0]
+        self.pageControll.currentPage = orderedViewControllers.firstIndex(of: pageContentViewController)!
     }
 }
