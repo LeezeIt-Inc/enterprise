@@ -8,10 +8,8 @@
 import Foundation
 
 enum StoryBoardsID : String {
-    case PhoneNumberViewController = "PhoneNumberViewController"
-    case VerificationViewController = "VerificationViewController"
-    case CreateAccountViewController = "CreateAccountViewController"
-}
-enum StoryBoardFileId : String {
-    case CreateAccountViewController = "CreateAccount"
+    case LogInSignUp = "LogInSignUp"
+    case LogIn = "LogIn"
+    case Verification = "Verification"
+    case SignUp = "SignUp"
 }

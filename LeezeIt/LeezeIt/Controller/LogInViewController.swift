@@ -7,7 +7,7 @@
 import Foundation
 import UIKit
 
-class PhoneNumberViewController:UIViewController{
+class LogInViewController:UIViewController{
     
     @IBOutlet weak var phoneNumberText: UITextField! {
         didSet {
@@ -34,15 +34,13 @@ class PhoneNumberViewController:UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         fetchUserDefaultData()
  }
     
     @IBAction func nextButton(_ sender: Any) {
         UserDefaults.standard.set(phoneNumberText.text!, forKey: "userPhoneNumber")
-        let storyBoard = UIStoryboard(name:StoryBoardsID.VerificationViewController.rawValue, bundle: nil)
-        
-        let nextvc = storyBoard.instantiateViewController(withIdentifier: StoryBoardsID.VerificationViewController.rawValue) as! VerificationViewController
+        let storyBoard = UIStoryboard(name:StoryBoardsID.Verification.rawValue, bundle: nil)
+        let nextvc = storyBoard.instantiateViewController(withIdentifier: StoryBoardsID.Verification.rawValue) as! VerificationViewController
        present(nextvc, animated: true)
     }
     
@@ -54,7 +52,7 @@ class PhoneNumberViewController:UIViewController{
     }
 }
 
-extension PhoneNumberViewController : UITextFieldDelegate {
+extension LogInViewController : UITextFieldDelegate {
     
     func format(with mask: String, phone: String) -> String {
         let numbers = phone.replacingOccurrences(of: "[^0-9]", with: "", options: .regularExpression)
@@ -96,5 +94,4 @@ extension PhoneNumberViewController : UITextFieldDelegate {
         }
         return true
     }
-    
 }

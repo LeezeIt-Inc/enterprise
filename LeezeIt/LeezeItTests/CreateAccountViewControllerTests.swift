@@ -8,9 +8,9 @@
 import XCTest
 @testable import LeezeIt
 
- class CreateAccountViewControllerTests: XCTestCase {
+ class SignUpViewControllerTests: XCTestCase {
      
- var viewController = CreateAccountViewController()
+ var viewController = SignUpViewController()
      
      func testEmailProperFormat() {
          XCTAssert(viewController.checkEmailFormat(email: "Ali123@gmail.com"))

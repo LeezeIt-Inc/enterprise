@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CreateAccountViewController: UIViewController, UITextFieldDelegate {
+class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
@@ -17,11 +17,9 @@ class CreateAccountViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.hideKeyboardWhenTappedView()
         modifyButton()
         enableNextButton()
-        
     }
     
     @IBAction func nextButtonAction() {
@@ -29,14 +27,14 @@ class CreateAccountViewController: UIViewController, UITextFieldDelegate {
     }
 }
 
-extension CreateAccountViewController {
+extension SignUpViewController {
     
     func hideKeyboardWhenTappedView() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         self.view.addGestureRecognizer(tap)
     }
     
-    @objc func dismissKeyboard(){
+    @objc func dismissKeyboard() {
         self.view.endEditing(true)
     }
     
@@ -49,7 +47,6 @@ extension CreateAccountViewController {
     //        restrict user to enter numbers in name textFields
      func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if textField == firstNameTextField || textField == lastNameTextField {
-            
             return checkTextField(string: string)
         }
         return true
@@ -88,7 +85,6 @@ extension CreateAccountViewController {
     @objc func editingChanged(_ textField: UITextField) {
         
         let validEmail = checkEmailFormat(email: emailTextField.text!)
-        
         if validEmail == true && passwordTextField.text!.count > 6 {
             nextButton.isEnabled = true
         }

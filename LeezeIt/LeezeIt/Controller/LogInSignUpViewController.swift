@@ -9,7 +9,7 @@ import UIKit
 
 
 
-class ViewController: UIViewController {
+class LogInSignUpViewController: UIViewController {
     
     let parentStackView: UIStackView = {
         let stackView = UIStackView()
@@ -22,7 +22,6 @@ class ViewController: UIViewController {
     let leezeitImageStackView:  UIStackView = {
         let stackView = UIStackView()
         return stackView
-        
     }()
     
     let buttonStackView:  UIStackView = {
@@ -35,64 +34,55 @@ class ViewController: UIViewController {
     
     var leezeitImage: UIImageView = {
         let leezeitImage =  UIImageView(image: .init(named: "LeezeitImage"))
-        leezeitImage.contentMode                               = .scaleToFill
-        leezeitImage.clipsToBounds                             = true
+        leezeitImage.contentMode = .scaleToFill
+        leezeitImage.clipsToBounds = true
         return leezeitImage
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         addViewsInView()
-        
     } 
 
     @objc func logIn(_ sender: UIButton) {
-        let storyBoard = UIStoryboard(name:StoryBoardsID.PhoneNumberViewController.rawValue, bundle: nil)
-        
-        let nextvc = storyBoard.instantiateViewController(withIdentifier: StoryBoardsID.PhoneNumberViewController.rawValue) as! PhoneNumberViewController
+        let storyBoard = UIStoryboard(name:StoryBoardsID.LogIn.rawValue, bundle: nil)
+        let nextvc = storyBoard.instantiateViewController(withIdentifier: StoryBoardsID.LogIn.rawValue) as! LogInViewController
        present(nextvc, animated: true)
-      
-       
     }
     
     @objc func signUP(_ sender: UIButton) {
-        let storyBoard = UIStoryboard(name:StoryBoardFileId.CreateAccountViewController.rawValue, bundle: nil)
-        
-        let nextvc = storyBoard.instantiateViewController(withIdentifier: StoryBoardsID.CreateAccountViewController.rawValue) as! CreateAccountViewController
+        let storyBoard = UIStoryboard(name:StoryBoardsID.SignUp.rawValue, bundle: nil)
+        let nextvc = storyBoard.instantiateViewController(withIdentifier: StoryBoardsID.SignUp.rawValue) as! SignUpViewController
        present(nextvc, animated: true)
     }
 }
 
-extension ViewController {
+extension LogInSignUpViewController {
  
     func parentStackViewConstraint() {
-        parentStackView.translatesAutoresizingMaskIntoConstraints                                                           = false
-        parentStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 170).isActive           = true
-        parentStackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 0).isActive     = true
-        parentStackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: 0).isActive   = true
-        parentStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10).isActive     = true
+        parentStackView.translatesAutoresizingMaskIntoConstraints = false
+        parentStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 170).isActive = true
+        parentStackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 0).isActive = true
+        parentStackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: 0).isActive = true
+        parentStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10).isActive = true
         //      adding views In StackView.
         addViewsInParentStackView()
-        
     }
     
     func imageStackViewConstraint() {
-        leezeitImageStackView.translatesAutoresizingMaskIntoConstraints                                               = false
-        leezeitImageStackView.centerXAnchor.constraint(equalTo: parentStackView.centerXAnchor).isActive               = true
-        leezeitImageStackView.topAnchor.constraint(equalTo: parentStackView.bottomAnchor, constant: -10).isActive     = true
+        leezeitImageStackView.translatesAutoresizingMaskIntoConstraints = false
+        leezeitImageStackView.centerXAnchor.constraint(equalTo: parentStackView.centerXAnchor).isActive = true
+        leezeitImageStackView.topAnchor.constraint(equalTo: parentStackView.bottomAnchor, constant: -10).isActive = true
         leezeitImageStackView.addArrangedSubview(leezeitImage)
-        
-        leezeitImage.translatesAutoresizingMaskIntoConstraints                                               = false
+        leezeitImage.translatesAutoresizingMaskIntoConstraints = false
         leezeitImage.heightAnchor.constraint(equalTo: parentStackView.widthAnchor, multiplier: 0.4).isActive = true
     }
     
     func buttonStackViewConstraint() {
-        buttonStackView.translatesAutoresizingMaskIntoConstraints                                                          = false
-        buttonStackView.leadingAnchor.constraint(equalTo: parentStackView.leadingAnchor, constant: 35).isActive            = true
-        buttonStackView.trailingAnchor.constraint(equalTo: parentStackView.trailingAnchor, constant: -35).isActive         = true
-        buttonStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor,constant: -130).isActive    = true
-
+        buttonStackView.translatesAutoresizingMaskIntoConstraints = false
+        buttonStackView.leadingAnchor.constraint(equalTo: parentStackView.leadingAnchor, constant: 35).isActive = true
+        buttonStackView.trailingAnchor.constraint(equalTo: parentStackView.trailingAnchor, constant: -35).isActive = true
+        buttonStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor,constant: -130).isActive = true
         addButtonsToStackView()
     }
    
