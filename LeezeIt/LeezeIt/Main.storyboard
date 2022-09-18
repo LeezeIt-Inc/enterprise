@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0rB-zq-GMV">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Second Tutorial View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="Y6W-OH-hqX" customClass="SecondTutorialViewController" customModule="LeezeIt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Second" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="u8G-Mx-VUT">
+                                <rect key="frame" x="0.0" y="40" width="320" height="318"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hnO-PT-1k2">
+                                        <rect key="frame" x="48" y="0.0" width="224.5" height="153"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LIST  YOUR  CAR  FOR  FREE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="8lT-nn-EEH">
+                                                <rect key="frame" x="0.0" y="0.0" width="224.5" height="153"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3kP-AF-uB8">
+                                        <rect key="frame" x="0.0" y="165" width="320" height="153"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RideCar2" translatesAutoresizingMaskIntoConstraints="NO" id="OUM-Uj-w7V">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="153"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="3kP-AF-uB8" secondAttribute="trailing" id="FgI-Sh-qsD"/>
+                                    <constraint firstItem="3kP-AF-uB8" firstAttribute="leading" secondItem="u8G-Mx-VUT" secondAttribute="leading" id="Rts-h0-MIe"/>
+                                </constraints>
+                                <variation key="heightClass=compact-widthClass=regular" spacing="170"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8j-YT-Swf">
+                                <rect key="frame" x="189.5" y="433" width="97.5" height="52"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="OK7-cH-LIa">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="62"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" secondItem="m8j-YT-Swf" secondAttribute="height" multiplier="3: 1.6" id="dQR-ut-UVA">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="21"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextButton:" destination="DUW-uh-ccH" eventType="touchUpInside" id="cLJ-no-LjH"/>
+                                    <action selector="nxtButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="njS-pf-GGT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="u8G-Mx-VUT" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="40" id="6ms-Dj-ojo">
+                                <variation key="heightClass=compact-widthClass=regular" constant="81"/>
+                            </constraint>
+                            <constraint firstItem="u8G-Mx-VUT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="NgS-sq-jJk"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="u8G-Mx-VUT" secondAttribute="trailing" id="gb3-29-kOD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="m8j-YT-Swf" secondAttribute="trailing" constant="33" id="mub-CM-fV7"/>
+                            <constraint firstItem="m8j-YT-Swf" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" constant="5" id="nbz-jS-aaC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nextButton" destination="m8j-YT-Swf" id="bAa-7D-kK3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="DUW-uh-ccH" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-531.8840579710145" y="509.59821428571428"/>
+        </scene>
+        <!--App Tutorial View Controller-->
+        <scene sceneID="E6i-eZ-8Yf">
+            <objects>
+                <pageViewController storyboardIdentifier="AppTutorialViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="0rB-zq-GMV" customClass="AppTutorialViewController" customModule="LeezeIt" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HiX-qe-acc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-528" y="-156"/>
+        </scene>
+        <!--First Tutorial View Controller-->
+        <scene sceneID="dUX-1k-4rY">
+            <objects>
+                <viewController storyboardIdentifier="FirstTutorialViewController" id="Fuf-QS-WIh" customClass="FirstTutorialViewController" customModule="LeezeIt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="first" id="cWb-Ps-tsq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Ueq-BS-GcA">
+                                <rect key="frame" x="2" y="40" width="316" height="408"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cDY-Fn-mOs">
+                                        <rect key="frame" x="14" y="0.0" width="288.5" height="198"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIND  A  RENTAL  CAR  NEAR  YOU" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Thx-ch-vX6">
+                                                <rect key="frame" x="0.0" y="0.0" width="288.5" height="198"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4pb-P1-ZYK">
+                                        <rect key="frame" x="0.0" y="210" width="316" height="198"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RideCar" translatesAutoresizingMaskIntoConstraints="NO" id="kiF-eA-7TV">
+                                                <rect key="frame" x="0.0" y="0.0" width="316" height="198"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IS4-g5-931"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IS4-g5-931" firstAttribute="trailing" secondItem="Ueq-BS-GcA" secondAttribute="trailing" priority="999" constant="2" id="0Wb-I6-x0q"/>
+                            <constraint firstItem="Ueq-BS-GcA" firstAttribute="leading" secondItem="cWb-Ps-tsq" secondAttribute="leading" constant="2" id="53K-no-DOP"/>
+                            <constraint firstItem="Ueq-BS-GcA" firstAttribute="leading" secondItem="IS4-g5-931" secondAttribute="leading" constant="2" id="LGF-Iu-5Da"/>
+                            <constraint firstItem="IS4-g5-931" firstAttribute="trailing" secondItem="Ueq-BS-GcA" secondAttribute="trailing" constant="2" id="iSr-6c-cSP"/>
+                            <constraint firstItem="Ueq-BS-GcA" firstAttribute="top" secondItem="cWb-Ps-tsq" secondAttribute="top" constant="40" id="tyf-U2-oAS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PzM-wv-uX3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="221.73913043478262" y="509.59821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="RideCar" width="336.50698852539062" height="198.21299743652344"/>
+        <image name="RideCar2" width="351.64498901367188" height="153.41000366210938"/>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
