@@ -12,7 +12,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="0EQ-Pn-Vru">
             <objects>
-                <viewController storyboardIdentifier="SignUp" id="HvU-os-ka7" customClass="SignUpViewController" customModule="LeezeIt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUp" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HvU-os-ka7" customClass="SignUpViewController" customModule="LeezeIt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IUY-LI-cVd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="950"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

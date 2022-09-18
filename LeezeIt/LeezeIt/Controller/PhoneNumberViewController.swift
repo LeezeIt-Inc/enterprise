@@ -4,10 +4,10 @@
 //
 //  Created by harris ali on 8/29/22.
 //
-import Foundation
+
 import UIKit
 
-class LogInViewController:UIViewController{
+class PhoneNumberViewController:UIViewController{
     
     @IBOutlet weak var phoneNumberText: UITextField! {
         didSet {
@@ -39,9 +39,9 @@ class LogInViewController:UIViewController{
     
     @IBAction func nextButton(_ sender: Any) {
         UserDefaults.standard.set(phoneNumberText.text!, forKey: "userPhoneNumber")
-        let storyBoard = UIStoryboard(name:StoryBoardsID.Verification.rawValue, bundle: nil)
-        let nextvc = storyBoard.instantiateViewController(withIdentifier: StoryBoardsID.Verification.rawValue) as! VerificationViewController
-       present(nextvc, animated: true)
+        let storyBoard = UIStoryboard(name:StoryBoardsID.VerificationStoryBoard.rawValue, bundle: nil)
+        let nextvc = storyBoard.instantiateViewController(withIdentifier: StoryBoardsID.VerificationStoryBoard.rawValue) as! VerificationViewController
+        present(nextvc, animated: true)
     }
     
     func fetchUserDefaultData () {
@@ -52,7 +52,7 @@ class LogInViewController:UIViewController{
     }
 }
 
-extension LogInViewController : UITextFieldDelegate {
+extension PhoneNumberViewController : UITextFieldDelegate {
     
     func format(with mask: String, phone: String) -> String {
         let numbers = phone.replacingOccurrences(of: "[^0-9]", with: "", options: .regularExpression)

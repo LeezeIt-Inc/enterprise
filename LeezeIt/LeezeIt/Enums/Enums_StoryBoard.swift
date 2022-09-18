@@ -8,8 +8,8 @@
 import Foundation
 
 enum StoryBoardsID : String {
-    case LogInSignUp = "LogInSignUp"
-    case LogIn = "LogIn"
-    case Verification = "Verification"
-    case SignUp = "SignUp"
+    case LogInSignUpStoryBoard = "LogInSignUp"
+    case PhoneNumberStoryBoard = "PhoneNumber"
+    case VerificationStoryBoard = "Verification"
+    case SignUpStoryBoard = "SignUp"
 }

@@ -45,15 +45,15 @@ class LogInSignUpViewController: UIViewController {
     } 
 
     @objc func logIn(_ sender: UIButton) {
-        let storyBoard = UIStoryboard(name:StoryBoardsID.LogIn.rawValue, bundle: nil)
-        let nextvc = storyBoard.instantiateViewController(withIdentifier: StoryBoardsID.LogIn.rawValue) as! LogInViewController
+        let storyBoard = UIStoryboard(name:StoryBoardsID.PhoneNumberStoryBoard.rawValue, bundle: nil)
+        let nextvc = storyBoard.instantiateViewController(withIdentifier: StoryBoardsID.PhoneNumberStoryBoard.rawValue) as! PhoneNumberViewController
        present(nextvc, animated: true)
     }
     
-    @objc func signUP(_ sender: UIButton) {
-        let storyBoard = UIStoryboard(name:StoryBoardsID.SignUp.rawValue, bundle: nil)
-        let nextvc = storyBoard.instantiateViewController(withIdentifier: StoryBoardsID.SignUp.rawValue) as! SignUpViewController
-       present(nextvc, animated: true)
+    @objc func signUp(_ sender: UIButton) {
+        let storyBoard = UIStoryboard(name:StoryBoardsID.SignUpStoryBoard.rawValue, bundle: nil)
+        let nextvc = storyBoard.instantiateViewController(withIdentifier: StoryBoardsID.SignUpStoryBoard.rawValue) as? SignUpViewController
+       present(nextvc!, animated: true)
     }
 }
 
@@ -111,7 +111,7 @@ extension LogInSignUpViewController {
                 buttonStackView.addArrangedSubview(button)
             } else {
                 button.setTitle("Sign Up", for: .normal)
-                button.addTarget(self, action: #selector(signUP(_:)), for: .touchUpInside)
+                button.addTarget(self, action: #selector(signUp(_:)), for: .touchUpInside)
                 buttonStackView.addArrangedSubview(button)
             }
         }

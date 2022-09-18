@@ -8,9 +8,9 @@
 import XCTest
 @testable import LeezeIt
 
-class LogInViewControllerTests: XCTestCase {
+class PhoneNumberViewControllerTests: XCTestCase {
     
-    var viewController =  LogInViewController()
+    var viewController =  PhoneNumberViewController()
     var phoneNumber = "16308273932"
     lazy var rejex = self.viewController.format(with: "+X (XXX) XXX-XXXX", phone: phoneNumber)
     

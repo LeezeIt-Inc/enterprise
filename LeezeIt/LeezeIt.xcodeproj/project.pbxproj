@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		552C2EBF28BD9EEA002CA571 /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 552C2EBE28BD9EEA002CA571 /* LogIn.storyboard */; };
-		552C2EC128BD9F30002CA571 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552C2EC028BD9F30002CA571 /* LogInViewController.swift */; };
+		552C2EBF28BD9EEA002CA571 /* PhoneNumber.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 552C2EBE28BD9EEA002CA571 /* PhoneNumber.storyboard */; };
+		552C2EC128BD9F30002CA571 /* PhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552C2EC028BD9F30002CA571 /* PhoneNumberViewController.swift */; };
 		552C2EE528BE9B22002CA571 /* TextFieldMaxLengths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552C2EE428BE9B22002CA571 /* TextFieldMaxLengths.swift */; };
 		554A2E4B28D12EAD004BEC5C /* CreateAccountViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A2E4A28D12EAD004BEC5C /* CreateAccountViewControllerTests.swift */; };
 		5573990F28C1044100205375 /* Verification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5573990E28C1044100205375 /* Verification.storyboard */; };
 		5573991128C1047100205375 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5573991028C1047100205375 /* VerificationViewController.swift */; };
 		5578D64328D59C940024E5A4 /* Enums_StoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5578D64228D59C940024E5A4 /* Enums_StoryBoard.swift */; };
 		83CF060D28D447B500F91196 /* LeezeItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CF060B28D447B500F91196 /* LeezeItTests.swift */; };
-		83CF060E28D447B500F91196 /* LogInViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CF060C28D447B500F91196 /* LogInViewControllerTests.swift */; };
+		83CF060E28D447B500F91196 /* PhoneNumberViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CF060C28D447B500F91196 /* PhoneNumberViewControllerTests.swift */; };
 		A0C224CC28B6CE6B00D3A744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224CB28B6CE6B00D3A744 /* AppDelegate.swift */; };
 		A0C224CE28B6CE6B00D3A744 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224CD28B6CE6B00D3A744 /* SceneDelegate.swift */; };
 		A0C224D028B6CE6B00D3A744 /* LogInSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224CF28B6CE6B00D3A744 /* LogInSignUpViewController.swift */; };
@@ -48,15 +48,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		552C2EBE28BD9EEA002CA571 /* LogIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogIn.storyboard; sourceTree = "<group>"; };
-		552C2EC028BD9F30002CA571 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		552C2EBE28BD9EEA002CA571 /* PhoneNumber.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhoneNumber.storyboard; sourceTree = "<group>"; };
+		552C2EC028BD9F30002CA571 /* PhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewController.swift; sourceTree = "<group>"; };
 		552C2EE428BE9B22002CA571 /* TextFieldMaxLengths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldMaxLengths.swift; sourceTree = "<group>"; };
 		554A2E4A28D12EAD004BEC5C /* CreateAccountViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewControllerTests.swift; sourceTree = "<group>"; };
 		5573990E28C1044100205375 /* Verification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Verification.storyboard; sourceTree = "<group>"; };
 		5573991028C1047100205375 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
 		5578D64228D59C940024E5A4 /* Enums_StoryBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums_StoryBoard.swift; sourceTree = "<group>"; };
 		83CF060B28D447B500F91196 /* LeezeItTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeezeItTests.swift; sourceTree = "<group>"; };
-		83CF060C28D447B500F91196 /* LogInViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewControllerTests.swift; sourceTree = "<group>"; };
+		83CF060C28D447B500F91196 /* PhoneNumberViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewControllerTests.swift; sourceTree = "<group>"; };
 		A0C224C828B6CE6B00D3A744 /* LeezeIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeezeIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C224CB28B6CE6B00D3A744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0C224CD28B6CE6B00D3A744 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				A0C224CF28B6CE6B00D3A744 /* LogInSignUpViewController.swift */,
-				552C2EC028BD9F30002CA571 /* LogInViewController.swift */,
+				552C2EC028BD9F30002CA571 /* PhoneNumberViewController.swift */,
 				A0DAEBCF28C73939000C554B /* SignUpViewController.swift */,
 				5573991028C1047100205375 /* VerificationViewController.swift */,
 			);
@@ -115,7 +115,7 @@
 			children = (
 				A0C224D628B6CE6D00D3A744 /* LaunchScreen.storyboard */,
 				A0C224D128B6CE6B00D3A744 /* Main.storyboard */,
-				552C2EBE28BD9EEA002CA571 /* LogIn.storyboard */,
+				552C2EBE28BD9EEA002CA571 /* PhoneNumber.storyboard */,
 				5573990E28C1044100205375 /* Verification.storyboard */,
 				A0DAEBD128C73951000C554B /* SignUp.storyboard */,
 				A0C224D428B6CE6D00D3A744 /* Assets.xcassets */,
@@ -186,7 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				83CF060B28D447B500F91196 /* LeezeItTests.swift */,
-				83CF060C28D447B500F91196 /* LogInViewControllerTests.swift */,
+				83CF060C28D447B500F91196 /* PhoneNumberViewControllerTests.swift */,
 				554A2E4A28D12EAD004BEC5C /* CreateAccountViewControllerTests.swift */,
 			);
 			path = LeezeItTests;
@@ -310,7 +310,7 @@
 				5573990F28C1044100205375 /* Verification.storyboard in Resources */,
 				A0C224D828B6CE6D00D3A744 /* LaunchScreen.storyboard in Resources */,
 				A0C224D528B6CE6D00D3A744 /* Assets.xcassets in Resources */,
-				552C2EBF28BD9EEA002CA571 /* LogIn.storyboard in Resources */,
+				552C2EBF28BD9EEA002CA571 /* PhoneNumber.storyboard in Resources */,
 				A0C224D328B6CE6B00D3A744 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,7 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				552C2EC128BD9F30002CA571 /* LogInViewController.swift in Sources */,
+				552C2EC128BD9F30002CA571 /* PhoneNumberViewController.swift in Sources */,
 				A0DAEBD028C73939000C554B /* SignUpViewController.swift in Sources */,
 				A0C224D028B6CE6B00D3A744 /* LogInSignUpViewController.swift in Sources */,
 				A0C224CC28B6CE6B00D3A744 /* AppDelegate.swift in Sources */,
@@ -354,7 +354,7 @@
 			files = (
 				83CF060D28D447B500F91196 /* LeezeItTests.swift in Sources */,
 				A0D29A9728CEE3D900878BD7 /* (null) in Sources */,
-				83CF060E28D447B500F91196 /* LogInViewControllerTests.swift in Sources */,
+				83CF060E28D447B500F91196 /* PhoneNumberViewControllerTests.swift in Sources */,
 				554A2E4B28D12EAD004BEC5C /* CreateAccountViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
