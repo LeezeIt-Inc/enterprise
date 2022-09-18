@@ -19,10 +19,10 @@
 		A040F53A28D58CFA00120190 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A040F53928D58CFA00120190 /* Main.storyboard */; };
 		A040F53C28D58E0B00120190 /* AppTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A040F53B28D58E0B00120190 /* AppTutorialViewController.swift */; };
 		A040F53E28D5904400120190 /* FirstTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A040F53D28D5904400120190 /* FirstTutorialViewController.swift */; };
-		A040F54028D5908800120190 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A040F53F28D5908800120190 /* SecondViewController.swift */; };
+		A040F54028D5908800120190 /* SecondTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A040F53F28D5908800120190 /* SecondTutorialViewController.swift */; };
 		A0C224CC28B6CE6B00D3A744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224CB28B6CE6B00D3A744 /* AppDelegate.swift */; };
 		A0C224CE28B6CE6B00D3A744 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224CD28B6CE6B00D3A744 /* SceneDelegate.swift */; };
-		A0C224D028B6CE6B00D3A744 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224CF28B6CE6B00D3A744 /* ViewController.swift */; };
+		A0C224D028B6CE6B00D3A744 /* signInSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224CF28B6CE6B00D3A744 /* signInSignUpViewController.swift */; };
 		A0C224D528B6CE6D00D3A744 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0C224D428B6CE6D00D3A744 /* Assets.xcassets */; };
 		A0C224D828B6CE6D00D3A744 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C224D628B6CE6D00D3A744 /* LaunchScreen.storyboard */; };
 		A0C224ED28B6CE6D00D3A744 /* LeezeItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224EC28B6CE6D00D3A744 /* LeezeItUITests.swift */; };
@@ -63,11 +63,11 @@
 		A040F53928D58CFA00120190 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A040F53B28D58E0B00120190 /* AppTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTutorialViewController.swift; sourceTree = "<group>"; };
 		A040F53D28D5904400120190 /* FirstTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTutorialViewController.swift; sourceTree = "<group>"; };
-		A040F53F28D5908800120190 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A040F53F28D5908800120190 /* SecondTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTutorialViewController.swift; sourceTree = "<group>"; };
 		A0C224C828B6CE6B00D3A744 /* LeezeIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeezeIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C224CB28B6CE6B00D3A744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0C224CD28B6CE6B00D3A744 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A0C224CF28B6CE6B00D3A744 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A0C224CF28B6CE6B00D3A744 /* signInSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInSignUpViewController.swift; sourceTree = "<group>"; };
 		A0C224D428B6CE6D00D3A744 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0C224D728B6CE6D00D3A744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0C224D928B6CE6D00D3A744 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -130,10 +130,10 @@
 			children = (
 				A0C224CB28B6CE6B00D3A744 /* AppDelegate.swift */,
 				A0C224CD28B6CE6B00D3A744 /* SceneDelegate.swift */,
-				A0C224CF28B6CE6B00D3A744 /* ViewController.swift */,
+				A0C224CF28B6CE6B00D3A744 /* signInSignUpViewController.swift */,
 				A037D7BF28D597C80086DFEE /* Storyboard.storyboard */,
 				A040F53D28D5904400120190 /* FirstTutorialViewController.swift */,
-				A040F53F28D5908800120190 /* SecondViewController.swift */,
+				A040F53F28D5908800120190 /* SecondTutorialViewController.swift */,
 				A040F53B28D58E0B00120190 /* AppTutorialViewController.swift */,
 				A040F53928D58CFA00120190 /* Main.storyboard */,
 				A0CA509328C2AE4900621C40 /* Buttons.swift */,
@@ -306,12 +306,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A040F54028D5908800120190 /* SecondViewController.swift in Sources */,
+				A040F54028D5908800120190 /* SecondTutorialViewController.swift in Sources */,
 				A040F53C28D58E0B00120190 /* AppTutorialViewController.swift in Sources */,
 				552C2EC128BD9F30002CA571 /* PhoneNumberViewController.swift in Sources */,
 				A0DAEBD028C73939000C554B /* CreateAccountViewController.swift in Sources */,
 				A040F53E28D5904400120190 /* FirstTutorialViewController.swift in Sources */,
-				A0C224D028B6CE6B00D3A744 /* ViewController.swift in Sources */,
+				A0C224D028B6CE6B00D3A744 /* signInSignUpViewController.swift in Sources */,
 				A0C224CC28B6CE6B00D3A744 /* AppDelegate.swift in Sources */,
 				552C2EE528BE9B22002CA571 /* TextFieldMaxLengths.swift in Sources */,
 				5573991128C1047100205375 /* VerificationViewController.swift in Sources */,

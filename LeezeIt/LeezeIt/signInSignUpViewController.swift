@@ -9,7 +9,7 @@ import UIKit
 
 
 
-class ViewController: UIViewController {
+class signInSignUpViewController: UIViewController {
     
     let parentStackView: UIStackView = {
         let stackView = UIStackView()
@@ -63,7 +63,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController {
+extension signInSignUpViewController {
  
     func parentStackViewConstraint() {
         parentStackView.translatesAutoresizingMaskIntoConstraints                                                           = false
