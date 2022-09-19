@@ -16,6 +16,7 @@
 		5578D64328D59C940024E5A4 /* Enums_StoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5578D64228D59C940024E5A4 /* Enums_StoryBoard.swift */; };
 		55CE079A28D7E14100C31A3F /* PhoneNumberViewController_UItextfieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CE079928D7E14100C31A3F /* PhoneNumberViewController_UItextfieldDelegate.swift */; };
 		55CE079C28D7E2B900C31A3F /* SignUPViewController_UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CE079B28D7E2B900C31A3F /* SignUPViewController_UITextFieldDelegate.swift */; };
+		55EFC5AA28D86615009C50E3 /* Custom_Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EFC5A928D86615009C50E3 /* Custom_Button.swift */; };
 		83CF060D28D447B500F91196 /* LeezeItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CF060B28D447B500F91196 /* LeezeItTests.swift */; };
 		83CF060E28D447B500F91196 /* PhoneNumberViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CF060C28D447B500F91196 /* PhoneNumberViewControllerTests.swift */; };
 		A0C224CC28B6CE6B00D3A744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C224CB28B6CE6B00D3A744 /* AppDelegate.swift */; };
@@ -59,6 +60,7 @@
 		5578D64228D59C940024E5A4 /* Enums_StoryBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums_StoryBoard.swift; sourceTree = "<group>"; };
 		55CE079928D7E14100C31A3F /* PhoneNumberViewController_UItextfieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewController_UItextfieldDelegate.swift; sourceTree = "<group>"; };
 		55CE079B28D7E2B900C31A3F /* SignUPViewController_UITextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUPViewController_UITextFieldDelegate.swift; sourceTree = "<group>"; };
+		55EFC5A928D86615009C50E3 /* Custom_Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom_Button.swift; sourceTree = "<group>"; };
 		83CF060B28D447B500F91196 /* LeezeItTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeezeItTests.swift; sourceTree = "<group>"; };
 		83CF060C28D447B500F91196 /* PhoneNumberViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewControllerTests.swift; sourceTree = "<group>"; };
 		A0C224C828B6CE6B00D3A744 /* LeezeIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeezeIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +165,7 @@
 		A0C224BF28B6CE6B00D3A744 = {
 			isa = PBXGroup;
 			children = (
+				55EFC5A928D86615009C50E3 /* Custom_Button.swift */,
 				A0C224CA28B6CE6B00D3A744 /* LeezeIt */,
 				A0C224E128B6CE6D00D3A744 /* LeezeItTests */,
 				A0C224EB28B6CE6D00D3A744 /* LeezeItUITests */,
@@ -354,6 +357,7 @@
 				55CE079A28D7E14100C31A3F /* PhoneNumberViewController_UItextfieldDelegate.swift in Sources */,
 				A0DAEBD028C73939000C554B /* SignUpViewController.swift in Sources */,
 				A0C224D028B6CE6B00D3A744 /* LogInSignUpViewController.swift in Sources */,
+				55EFC5AA28D86615009C50E3 /* Custom_Button.swift in Sources */,
 				A0C224CC28B6CE6B00D3A744 /* AppDelegate.swift in Sources */,
 				552C2EE528BE9B22002CA571 /* TextFieldMaxLengths.swift in Sources */,
 				5573991128C1047100205375 /* VerificationViewController.swift in Sources */,
