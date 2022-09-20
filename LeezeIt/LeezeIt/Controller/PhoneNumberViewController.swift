@@ -4,7 +4,7 @@
 //
 //  Created by harris ali on 8/29/22.
 //
-import Foundation
+
 import UIKit
 
 class PhoneNumberViewController:UIViewController{
@@ -24,6 +24,7 @@ class PhoneNumberViewController:UIViewController{
             leezeItlogo.image = UIImage(named: "LeezeIt")
         }
     }
+    //TODO: [make Button resuseable].
     
     @IBOutlet weak var nextButton: UIButton! {
         didSet {
@@ -34,23 +35,15 @@ class PhoneNumberViewController:UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         fetchUserDefaultData()
  }
     
     @IBAction func nextButton(_ sender: Any) {
         UserDefaults.standard.set(phoneNumberText.text!, forKey: "userPhoneNumber")
+        let storyBoard = UIStoryboard(name:StoryBoardsID.VerificationStoryBoard.rawValue, bundle: nil)
+        let nextvc = storyBoard.instantiateViewController(withIdentifier: StoryBoardsID.VerificationStoryBoard.rawValue) as! VerificationViewController
+        present(nextvc, animated: true)
     }
-    
-    func fetchUserDefaultData () {
-        let valueOfPhoneNumber = UserDefaults.standard.string(forKey: "userPhoneNumber")
-        if valueOfPhoneNumber != nil {
-            phoneNumberText.text = valueOfPhoneNumber
-        }
-    }
-}
-
-extension PhoneNumberViewController : UITextFieldDelegate {
     
     func format(with mask: String, phone: String) -> String {
         let numbers = phone.replacingOccurrences(of: "[^0-9]", with: "", options: .regularExpression)
@@ -70,17 +63,16 @@ extension PhoneNumberViewController : UITextFieldDelegate {
         return result
     }
     
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        guard let text = textField.text else { return false }
-        let newString = (text as NSString).replacingCharacters(in: range, with: string)
-        textField.text = format(with: "+X (XXX) XXX-XXXX", phone: newString)
-        dismissKeyBoard()
-        return false
-    }
-  
     //Hides keyboard whenever user click/tap anywhere on the screen
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
+    }
+    
+    func fetchUserDefaultData () {
+        let valueOfPhoneNumber = UserDefaults.standard.string(forKey: "userPhoneNumber")
+        if valueOfPhoneNumber != nil {
+            phoneNumberText.text = valueOfPhoneNumber
+        }
     }
     
     //hide keyboard after user entered 10 digits of phoneNumber
@@ -92,5 +84,4 @@ extension PhoneNumberViewController : UITextFieldDelegate {
         }
         return true
     }
-    
 }

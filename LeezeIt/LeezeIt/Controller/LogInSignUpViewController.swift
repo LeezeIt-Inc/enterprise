@@ -8,8 +8,7 @@
 import UIKit
 
 
-
-class ViewController: UIViewController {
+class LogInSignUpViewController: UIViewController {
     
     let parentStackView: UIStackView = {
         let stackView = UIStackView()
@@ -22,7 +21,6 @@ class ViewController: UIViewController {
     let leezeitImageStackView:  UIStackView = {
         let stackView = UIStackView()
         return stackView
-        
     }()
     
     let buttonStackView:  UIStackView = {
@@ -35,61 +33,55 @@ class ViewController: UIViewController {
     
     var leezeitImage: UIImageView = {
         let leezeitImage =  UIImageView(image: .init(named: "LeezeitImage"))
-        leezeitImage.contentMode                               = .scaleToFill
-        leezeitImage.clipsToBounds                             = true
+        leezeitImage.contentMode = .scaleToFill
+        leezeitImage.clipsToBounds = true
         return leezeitImage
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         addViewsInView()
-        
     } 
-
+    //TODO: [make Button resuseable].
     @objc func logIn(_ sender: UIButton) {
-        print("LogIn Button Tapped")
-        
-    }
-    
-    @objc func signUP(_ sender: UIButton) {
-        print("signUp Button Tapped")
-        let storyBoard = UIStoryboard(name: "PhoneNumberViewController", bundle: nil)
-        
- let nextvc = storyBoard.instantiateViewController(withIdentifier: "PhoneNumberViewController") as! PhoneNumberViewController
+        let storyBoard = UIStoryboard(name:StoryBoardsID.PhoneNumberStoryBoard.rawValue, bundle: nil)
+        let nextvc = storyBoard.instantiateViewController(withIdentifier: StoryBoardsID.PhoneNumberStoryBoard.rawValue) as! PhoneNumberViewController
        present(nextvc, animated: true)
     }
+    //TODO: [make Button resuseable].
+    @objc func signUp(_ sender: UIButton) {
+        let storyBoard = UIStoryboard(name:StoryBoardsID.SignUpStoryBoard.rawValue, bundle: nil)
+        let nextvc = storyBoard.instantiateViewController(withIdentifier: StoryBoardsID.SignUpStoryBoard.rawValue) as? SignUpViewController
+       present(nextvc!, animated: true)
+    }
 }
-
-extension ViewController {
+//MARK: - Extension of LogInSignUpViewController
+extension LogInSignUpViewController {
  
     func parentStackViewConstraint() {
-        parentStackView.translatesAutoresizingMaskIntoConstraints                                                           = false
-        parentStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 170).isActive           = true
-        parentStackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 0).isActive     = true
-        parentStackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: 0).isActive   = true
-        parentStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10).isActive     = true
+        parentStackView.translatesAutoresizingMaskIntoConstraints = false
+        parentStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 170).isActive = true
+        parentStackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 0).isActive = true
+        parentStackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: 0).isActive = true
+        parentStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10).isActive = true
         //      adding views In StackView.
         addViewsInParentStackView()
-        
     }
     
     func imageStackViewConstraint() {
-        leezeitImageStackView.translatesAutoresizingMaskIntoConstraints                                               = false
-        leezeitImageStackView.centerXAnchor.constraint(equalTo: parentStackView.centerXAnchor).isActive               = true
-        leezeitImageStackView.topAnchor.constraint(equalTo: parentStackView.bottomAnchor, constant: -10).isActive     = true
+        leezeitImageStackView.translatesAutoresizingMaskIntoConstraints = false
+        leezeitImageStackView.centerXAnchor.constraint(equalTo: parentStackView.centerXAnchor).isActive = true
+        leezeitImageStackView.topAnchor.constraint(equalTo: parentStackView.bottomAnchor, constant: -10).isActive = true
         leezeitImageStackView.addArrangedSubview(leezeitImage)
-        
-        leezeitImage.translatesAutoresizingMaskIntoConstraints                                               = false
+        leezeitImage.translatesAutoresizingMaskIntoConstraints = false
         leezeitImage.heightAnchor.constraint(equalTo: parentStackView.widthAnchor, multiplier: 0.4).isActive = true
     }
     
     func buttonStackViewConstraint() {
-        buttonStackView.translatesAutoresizingMaskIntoConstraints                                                          = false
-        buttonStackView.leadingAnchor.constraint(equalTo: parentStackView.leadingAnchor, constant: 35).isActive            = true
-        buttonStackView.trailingAnchor.constraint(equalTo: parentStackView.trailingAnchor, constant: -35).isActive         = true
-        buttonStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor,constant: -130).isActive    = true
-
+        buttonStackView.translatesAutoresizingMaskIntoConstraints = false
+        buttonStackView.leadingAnchor.constraint(equalTo: parentStackView.leadingAnchor, constant: 35).isActive = true
+        buttonStackView.trailingAnchor.constraint(equalTo: parentStackView.trailingAnchor, constant: -35).isActive = true
+        buttonStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor,constant: -130).isActive = true
         addButtonsToStackView()
     }
    
@@ -118,7 +110,7 @@ extension ViewController {
                 buttonStackView.addArrangedSubview(button)
             } else {
                 button.setTitle("Sign Up", for: .normal)
-                button.addTarget(self, action: #selector(signUP(_:)), for: .touchUpInside)
+                button.addTarget(self, action: #selector(signUp(_:)), for: .touchUpInside)
                 buttonStackView.addArrangedSubview(button)
             }
         }
