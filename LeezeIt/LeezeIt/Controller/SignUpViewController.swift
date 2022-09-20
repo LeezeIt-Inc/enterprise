@@ -21,6 +21,7 @@ class SignUpViewController: UIViewController {
         modifyButton()
         enableNextButton()
     }
+    //TODO: [make Button resuseable].
     
     @IBAction func nextButtonAction() {
         showAlertOfMissingTextInTextField()
@@ -31,7 +32,6 @@ class SignUpViewController: UIViewController {
 
 extension SignUpViewController {
     
-
     func checkTextField(string: String) -> Bool {
         let allowedCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
         let allowedCharacterSet = CharacterSet(charactersIn: allowedCharacters)

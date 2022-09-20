@@ -17,11 +17,8 @@ class SharedClass: NSObject {
         button.frame.size = CGSize(width: 350, height: 60)
         button.backgroundColor = .systemMint
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 24)
-        
-        
     }
     
     private override init() {
-        
     }
 }

@@ -8,7 +8,6 @@
 import UIKit
 
 
-
 class LogInSignUpViewController: UIViewController {
     
     let parentStackView: UIStackView = {
@@ -43,20 +42,20 @@ class LogInSignUpViewController: UIViewController {
         super.viewDidLoad()
         addViewsInView()
     } 
-
+    //TODO: [make Button resuseable].
     @objc func logIn(_ sender: UIButton) {
         let storyBoard = UIStoryboard(name:StoryBoardsID.PhoneNumberStoryBoard.rawValue, bundle: nil)
         let nextvc = storyBoard.instantiateViewController(withIdentifier: StoryBoardsID.PhoneNumberStoryBoard.rawValue) as! PhoneNumberViewController
        present(nextvc, animated: true)
     }
-    
+    //TODO: [make Button resuseable].
     @objc func signUp(_ sender: UIButton) {
         let storyBoard = UIStoryboard(name:StoryBoardsID.SignUpStoryBoard.rawValue, bundle: nil)
         let nextvc = storyBoard.instantiateViewController(withIdentifier: StoryBoardsID.SignUpStoryBoard.rawValue) as? SignUpViewController
        present(nextvc!, animated: true)
     }
 }
-
+//MARK: - Extension of LogInSignUpViewController
 extension LogInSignUpViewController {
  
     func parentStackViewConstraint() {

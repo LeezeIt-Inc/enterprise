@@ -14,6 +14,8 @@
 		5573990F28C1044100205375 /* Verification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5573990E28C1044100205375 /* Verification.storyboard */; };
 		5573991128C1047100205375 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5573991028C1047100205375 /* VerificationViewController.swift */; };
 		5578D64328D59C940024E5A4 /* Enums_StoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5578D64228D59C940024E5A4 /* Enums_StoryBoard.swift */; };
+		55B66C9D28D94EA70043B02C /* ex_Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B66C9C28D94EA70043B02C /* ex_Button.swift */; };
+		55B66C9F28D94EDD0043B02C /* FinalClassButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B66C9E28D94EDD0043B02C /* FinalClassButton.swift */; };
 		55CE079A28D7E14100C31A3F /* PhoneNumberViewController_UItextfieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CE079928D7E14100C31A3F /* PhoneNumberViewController_UItextfieldDelegate.swift */; };
 		55CE079C28D7E2B900C31A3F /* SignUPViewController_UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CE079B28D7E2B900C31A3F /* SignUPViewController_UITextFieldDelegate.swift */; };
 		55EFC5AA28D86615009C50E3 /* Custom_Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EFC5A928D86615009C50E3 /* Custom_Button.swift */; };
@@ -58,6 +60,8 @@
 		5573990E28C1044100205375 /* Verification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Verification.storyboard; sourceTree = "<group>"; };
 		5573991028C1047100205375 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
 		5578D64228D59C940024E5A4 /* Enums_StoryBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums_StoryBoard.swift; sourceTree = "<group>"; };
+		55B66C9C28D94EA70043B02C /* ex_Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ex_Button.swift; sourceTree = "<group>"; };
+		55B66C9E28D94EDD0043B02C /* FinalClassButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalClassButton.swift; sourceTree = "<group>"; };
 		55CE079928D7E14100C31A3F /* PhoneNumberViewController_UItextfieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewController_UItextfieldDelegate.swift; sourceTree = "<group>"; };
 		55CE079B28D7E2B900C31A3F /* SignUPViewController_UITextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUPViewController_UITextFieldDelegate.swift; sourceTree = "<group>"; };
 		55EFC5A928D86615009C50E3 /* Custom_Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom_Button.swift; sourceTree = "<group>"; };
@@ -158,6 +162,9 @@
 			children = (
 				55CE079928D7E14100C31A3F /* PhoneNumberViewController_UItextfieldDelegate.swift */,
 				55CE079B28D7E2B900C31A3F /* SignUPViewController_UITextFieldDelegate.swift */,
+				55EFC5A928D86615009C50E3 /* Custom_Button.swift */,
+				55B66C9C28D94EA70043B02C /* ex_Button.swift */,
+				55B66C9E28D94EDD0043B02C /* FinalClassButton.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -165,7 +172,6 @@
 		A0C224BF28B6CE6B00D3A744 = {
 			isa = PBXGroup;
 			children = (
-				55EFC5A928D86615009C50E3 /* Custom_Button.swift */,
 				A0C224CA28B6CE6B00D3A744 /* LeezeIt */,
 				A0C224E128B6CE6D00D3A744 /* LeezeItTests */,
 				A0C224EB28B6CE6D00D3A744 /* LeezeItUITests */,
@@ -357,6 +363,8 @@
 				55CE079A28D7E14100C31A3F /* PhoneNumberViewController_UItextfieldDelegate.swift in Sources */,
 				A0DAEBD028C73939000C554B /* SignUpViewController.swift in Sources */,
 				A0C224D028B6CE6B00D3A744 /* LogInSignUpViewController.swift in Sources */,
+				55B66C9D28D94EA70043B02C /* ex_Button.swift in Sources */,
+				55B66C9F28D94EDD0043B02C /* FinalClassButton.swift in Sources */,
 				55EFC5AA28D86615009C50E3 /* Custom_Button.swift in Sources */,
 				A0C224CC28B6CE6B00D3A744 /* AppDelegate.swift in Sources */,
 				552C2EE528BE9B22002CA571 /* TextFieldMaxLengths.swift in Sources */,

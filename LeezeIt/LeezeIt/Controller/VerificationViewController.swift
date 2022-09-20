@@ -18,7 +18,7 @@ class VerificationViewController: UIViewController,UITextFieldDelegate {
             verifyButtonOutlet.layer.cornerRadius = 12
         }
     }
-    
+    //TODO: [make Button resuseable].
     @IBAction func verifyButton(_ sender: Any) {
         
     }

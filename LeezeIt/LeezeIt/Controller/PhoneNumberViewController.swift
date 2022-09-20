@@ -24,6 +24,7 @@ class PhoneNumberViewController:UIViewController{
             leezeItlogo.image = UIImage(named: "LeezeIt")
         }
     }
+    //TODO: [make Button resuseable].
     
     @IBOutlet weak var nextButton: UIButton! {
         didSet {
